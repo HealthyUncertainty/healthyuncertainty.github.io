@@ -1,5 +1,3 @@
-### About Me
-
 My name is Ian, I'm from Vancouver, Canada (on the unceded territory of the Musqueam, Squamish, and Tsleil-Waututh First Nations).
 
 ![A Picture of Vancouver][vanpic]
