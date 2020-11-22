@@ -15,6 +15,7 @@ author: Ian Andrew Cromwell
 
 navbar-links:
   About Me: "aboutme"
+  R Guide: "RGuide/Introduction"
   #Resources:
     #- Beautiful Jekyll: "https://beautifuljekyll.com"
     #- Learn markdown: "https://www.markdowntutorial.com/"
