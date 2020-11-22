@@ -25,8 +25,8 @@ I don’t recommend using the normal R user interface. It’s frustrating and li
 
 Both Tinn-R and RStudio are free to download.
 
-[Next Chapter >](http://healthyuncertainty.github.io/Chapter3)
+[Next Chapter >](http://healthyuncertainty.github.io/RGuide/Chapter3)
 
-[< Previous Chapter](http://healthyuncertainty.github.io/Chapter1)
+[< Previous Chapter](http://healthyuncertainty.github.io/RGuide/Chapter1)
 
 [<< Back to Start](http://healthyuncertainty.github.io/RGuide/Introduction)
