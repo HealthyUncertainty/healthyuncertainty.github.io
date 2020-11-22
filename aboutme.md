@@ -1,13 +1,12 @@
-### About Me
-
 My name is Ian, I'm from Vancouver, Canada (on the unceded territory of the Musqueam, Squamish, and Tsleil-Waututh First Nations).
 
 ![A Picture of Vancouver][vanpic]
-[vanpic]: https://github.com/HealthyUncertainty/healthyuncertainty.github.io/blob/master/Pictures/Vancouver.jpg
 
-- BSc (Hons) Waterloo (2007), MSc Queen's (2009), PhD UBC (2019)
-- Health Economist, BC Cancer (2009-2020)
-- Health Economics Manager, CADTH (2020-Present)
+[vanpic]: https://www.dropbox.com/s/6wmc6itqg45h21u/Vancouver.jpg?dl=1
+
+- BSc Hons., Health Studies and Gerontology, Waterloo (2007); MSc., Epidemiology, Queen's (2009); PhD, Population and Public Health, UBC (2019)
+- Health Economist, [ARCC](https://cc-arcc.ca/) (2009-2020)
+- Health Economics Manager, [CADTH](https://cadth.ca/) (2020-Present)
 
 I got into health economics with the aim of safeguarding the long-term viability of the Canadian health care system. I got into R because I found Excel and TreeAge to be clunky (and expensive, in the case of the latter). I got into blogging about R because I found most of the guides were pretty unfriendly to novices.
 
