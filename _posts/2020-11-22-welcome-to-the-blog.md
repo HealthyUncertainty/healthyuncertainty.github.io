@@ -14,7 +14,7 @@ When I left my job at the beginning of this year, I thought it was the right tim
 
 Then, about a month ago, I got really fed up with one of the principal "distractions" in my life, a side project I'd been developing since 2016, and decided to step away from it for a while. This, plus the fact that I was home all the time because of the COVID-19 pandemic, opened up some mental and calendar space for me to finally get this darn thing online.
 
-#So what is this blog for?
+## So what is this blog for?
 
 I know there are a lot of people, trainees and senior researchers alike, who find R intimidating. Over the years, I've developed some tricks for doing health economic stuff in R. I've also been paying casual attention to the broader conversation that is happening about Open Source methods in science broadly, and health economics specifically. I believe that I am in a position to make some people's lives less frustrating so they can get on with the work of making the world a better place. That's what this blog is about.
 
