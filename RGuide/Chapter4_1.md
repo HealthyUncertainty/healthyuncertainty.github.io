@@ -32,7 +32,7 @@ A common way of depicting Health State Transition models is through the use of â
 
 You can see an illustration of a simple model below:
 
-![alt text][modelschematic]
+![A schematic of a decision model][modelschematic]
 
 [modelschematic]: https://www.dropbox.com/s/fsul5q9264lf2cr/4_1%20Model%20Schematic.jpg?dl=0
  
