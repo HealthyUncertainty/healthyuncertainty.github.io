@@ -1,12 +1,8 @@
-#---
-#layout: page
-#title: About me
-#subtitle: 
-#---
-
 This blog is here to collect my random thoughts, ideas, and tinkerings as I develop R-based tools for doing things in health economics. I hope to eventually start describing my Python-based work as well.
 
 The intended audience for this work is researchers, trainees, and others who are interested in cost-effectiveness model building but do not have a background in R or much coding experience at all. I will try to avoid jargon and give detailed explanations of what I'm doing.
+
+The best place to start is with my Guide to Health State Transition Model Building in R.
 
 ### About Me
 
