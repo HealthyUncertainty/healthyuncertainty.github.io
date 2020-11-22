@@ -38,4 +38,4 @@ All comments, concerns, questions, and corrections should be left as comments be
 
 Thanks for reading, and I hope you find this guide useful. Let’s get going!
 
-[Chapter 1](healthyuncertainty.github.io)
+[Chapter 1](Chapter1)
