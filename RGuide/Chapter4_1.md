@@ -32,9 +32,9 @@ A common way of depicting Health State Transition models is through the use of �
 
 You can see an illustration of a simple model below:
 
-![alt text][logo]
+![alt text][modelschematic]
 
-[logo]: https://glitch.com/culture/content/images/2019/04/webcomicNameMashup-1.png "Logo Title Text 2"
+[modelschematic]: https://www.dropbox.com/s/fsul5q9264lf2cr/4_1%20Model%20Schematic.jpg?dl=0
  
 People in this model are sorted into one of two health states – W or X, according to some underlying probability (which I have called ‘PtoW’ and ‘PtoX’). This sorting process happens instantaneously (i.e., within a single cycle). From there, people can move between states according to the transition probabilities (for example, ‘P_WtoX’ is the probability of moving from ‘Health State W’ to ‘Health State X’ in a given cycle), or they can remain in the same state until the next cycle. ‘Health State Z’ is a terminal state, meaning that the probability of transitioning into another state is 0.
 

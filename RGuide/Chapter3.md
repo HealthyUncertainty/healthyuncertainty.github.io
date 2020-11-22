@@ -467,15 +467,15 @@ I won’t print the output, since it would be a string of 1000 numbers, and you 
 
 [hist2]: https://www.dropbox.com/s/xwe2b2d0fvzdvy3/3_3%20Larger%20histogram.jpg?dl=1 "Another histogram of the outputs"
  
-Exactly as we’d expect, we see a normally-distributed set of numbers with a mean of ~25. We can verify this easily. The ‘summary’ function will give us max/min values, along with 25%, 50%, and 75% quantiles, and the mean for a vector. We can also specify specific quantiles we’re interested in (5% and 95%, in this case) using the ‘quantile’ function:
+Exactly as we’d expect, we see a normally-distributed set of numbers with a mean of ~25. We can verify this easily. The ‘summary’ function will give us max/min values, along with 25%, 50%, and 75% quantiles, and the mean for a vector. We can also specify specific quantiles we’re interested in (2.5% and 97.5%, in this case) using the ‘quantile’ function:
 ~~~
 17	summary(test2)
-18	quantile(test2, c(0.05, 0.25, 0.5, 0.75, 0.95))
+18	quantile(test2, c(0.025, 0.25, 0.5, 0.75, 0.975))
 
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
   10.58   21.63   25.30   25.10   28.34   43.49 
 
-      5%      25%      50%      75%      95% 
+    2.5%      25%      50%      75%    97.5% 
 16.99004 21.62641 25.30189 28.33707 33.22588 
 ~~~
 
@@ -616,9 +616,9 @@ In the next chapter, we're going to pull all these different ideas together and 
 
 ### 3.5 - A Note on For Loops
 
-Seasoned programmers in R will no doubt be appalled by the last chapter. Loops are acceptable programming but there are methods out there that are much faster and more concise than my method. This is the primary way in which my modeling approach differs from the one developed by the DARTH group, although there are many others.
+Seasoned programmers in R will no doubt be appalled by the last chapter. Loops are acceptable programming but there are methods out there that are much faster and more concise than my method. This, and the use of three-dimensional arrays are the primary ways in which my modeling approach differs from the one developed by the DARTH group, although there are many others. It is also 'best practice' to write things as functions and then run the function in a loop, rather than writing the function *as* a loop (if the distinction doesn't make sense to you, don't worry about it).
 
-I am not a developer nor am I an especially savvy coder. I originally began working on developing this method back in 2011, and didn't have any R developers to assist me. This was also well before I discovered the blossoming R-based modeling community (and, I suspect, not too long after that community started coalescing). As a result, this method doesn't reflect some of the excellent work being done by people who are more skilled than I.
+I am not a developer nor am I an especially savvy coder. I originally began working on developing this method back in 2011, and didn't have any R developers to assist me. This was also well before I discovered the blossoming R-based modeling community online. As a result, this method doesn't reflect some of the excellent work being done by people who are more skilled than I.
 
 Loops still have a ton of usefulness outside of the context we'll be using them for in this guide, so this knowledge is still useful.
 
