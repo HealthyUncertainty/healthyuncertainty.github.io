@@ -6,7 +6,7 @@ My name is Ian, I'm from Vancouver, Canada (on the unceded territory of the Musq
 
 [vanpic]: https://www.dropbox.com/s/6wmc6itqg45h21u/Vancouver.jpg?dl=1
 
-- BSc Hons., Waterloo (2007); MSc., Queen's (2009); PhD, UBC (2019)
+- BSc Hons., Health Studies and Gerontology, Waterloo (2007); MSc., Epidemiology, Queen's (2009); PhD, Population and Public Health, UBC (2019)
 - Health Economist, BC Cancer (2009-2020)
 - Health Economics Manager, CADTH (2020-Present)
 
