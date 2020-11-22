@@ -6,7 +6,7 @@ My name is Ian, I'm from Vancouver, Canada (on the unceded territory of the Musq
 
 [vanpic]: https://github.com/HealthyUncertainty/healthyuncertainty.github.io/blob/master/Pictures/Vancouver.jpg
 
-- BSc (Hons) Waterloo (2007), MSc Queen's (2009), PhD UBC (2019)
+- BSc Hons., Waterloo (2007); MSc., Queen's (2009); PhD, UBC (2019)
 - Health Economist, BC Cancer (2009-2020)
 - Health Economics Manager, CADTH (2020-Present)
 
