@@ -201,6 +201,8 @@ What we have done is take our model schematic, represent the health states as th
 
 Having done that, we are very close to being finished. All that remains to do is apply our cost and utility estimates, which we will cover in the next section.
 
-[Next Chapter](http://healthyuncertainty.github.io/RGuide/Chapter4_6)
-[Previous Chapter](http://healthyuncertainty.github.io/RGuide/Chapter4_4)
-[Back to Start](http://healthyuncertainty.github.io/RGuide/Introduction)
+[Next Chapter >](http://healthyuncertainty.github.io/RGuide/Chapter4_6)
+
+[< Previous Chapter](http://healthyuncertainty.github.io/RGuide/Chapter4_4)
+
+[<< Back to Start](http://healthyuncertainty.github.io/RGuide/Introduction)

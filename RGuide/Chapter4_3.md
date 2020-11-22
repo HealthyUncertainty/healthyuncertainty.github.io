@@ -66,6 +66,8 @@ The blank cells are values that are calculated based on another value – return
 
 It’s important to keep in mind that these are mean values, and we will need to know the standard error around these values in order to build the model. For this example, we’ll add the standard error in the R code, but it’s also possible and worthwhile to include them at this stage. Because it is easier to adjust standard errors automatically in the code, we will append this discussion for now and revisit it in the corresponding chapter.
 
-[Next Chapter](http://healthyuncertainty.github.io/RGuide/Chapter4_4)
-[Previous Chapter](http://healthyuncertainty.github.io/RGuide/Chapter4_2)
-[Back to Start](http://healthyuncertainty.github.io/RGuide/Introduction)
+[Next Chapter >](http://healthyuncertainty.github.io/RGuide/Chapter4_4)
+
+[< Previous Chapter](http://healthyuncertainty.github.io/RGuide/Chapter4_2)
+
+[<< Back to Start](http://healthyuncertainty.github.io/RGuide/Introduction)

@@ -87,6 +87,8 @@ Now that we’ve identified all of the model parameters, let’s plunk them into
 
 Next, we're going to assign some mean and standard deviation values to each of our variables. We’re going to come back to variable “types” in later chapters, but for now they serve an illustrative purpose.
 
-[Next Chapter](http://healthyuncertainty.github.io/RGuide/Chapter4_3)
-[Previous Chapter](http://healthyuncertainty.github.io/RGuide/Chapter4_1)
-[Back to Start](http://healthyuncertainty.github.io/RGuide/Introduction)
+[Next Chapter >](http://healthyuncertainty.github.io/RGuide/Chapter4_3)
+
+[< Previous Chapter](http://healthyuncertainty.github.io/RGuide/Chapter4_1)
+
+[<< Back to Start](http://healthyuncertainty.github.io/RGuide/Introduction)
