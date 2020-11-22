@@ -398,6 +398,6 @@ Optimal intervention (max expected utility) for k=50000: A
 
 The Output suggests that at a WTP value of $50,000/LYG, A is 98.7% cost-effective. You can use whatever WTP value is most appropriate for your decision-making context.
 
-[Next Chapter](healthyuncertainty.github.io/RGuide/Chapter6)
-[Previous Chapter](healthyuncertainty.github.io/RGuide/Chapter4_6)
-[Back to Start](healthyuncertainty.github.io/RGuide/Welcome)
+[Next Chapter](http://healthyuncertainty.github.io/RGuide/Chapter6)
+[Previous Chapter](http://healthyuncertainty.github.io/RGuide/Chapter4_6)
+[Back to Start](http://healthyuncertainty.github.io/RGuide/Introduction)

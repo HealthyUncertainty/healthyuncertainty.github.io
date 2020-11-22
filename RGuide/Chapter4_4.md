@@ -287,6 +287,6 @@ So far, so good. Now there’s the relatively simple task of defining the remain
 
 With this step, we create 5 new variables that are returning values of the variables we created in the previous lines of code. We now have all of the variables that we need to populate our model – all we need to do now is tell R how to apply those variables, which will be the subject of our next chapter.
 
-[Next Chapter](healthyuncertainty.github.io/RGuide/Chapter4_5)
-[Previous Chapter](healthyuncertainty.github.io/RGuide/Chapter4_3)
-[Back to Start](healthyuncertainty.github.io/RGuide/Welcome)
+[Next Chapter](http://healthyuncertainty.github.io/RGuide/Chapter4_5)
+[Previous Chapter](http://healthyuncertainty.github.io/RGuide/Chapter4_3)
+[Back to Start](http://healthyuncertainty.github.io/RGuide/Introduction)

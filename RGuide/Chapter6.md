@@ -35,6 +35,6 @@ I have also chosen not to demonstrate a few techniques like univariate sensitivi
 
 I want to prevail upon you as firmly as I can that this is not "the way to build models in R". This is a technique that I developed, with some help, over the course of building a few models. There are people whose area of academic and professional expertise is developing methods for model development, and I am quite sure that there are differences between their approaches and mine. I too am still learning. However, the method described in this guide will help you build simple, straightforward models for cost-effectiveness analysis. It gives you a place to start, and hopefully demystifies the process of working in R.
 
-[Next Chapter](healthyuncertainty.github.io/RGuide/Chapter7)
-[Previous Chapter](healthyuncertainty.github.io/RGuide/Chapter5)
-[Back to Start](healthyuncertainty.github.io/RGuide/Welcome)
+[Next Chapter](http://healthyuncertainty.github.io/RGuide/Chapter7)
+[Previous Chapter](http://healthyuncertainty.github.io/RGuide/Chapter5)
+[Back to Start](http://healthyuncertainty.github.io/RGuide/Introduction)

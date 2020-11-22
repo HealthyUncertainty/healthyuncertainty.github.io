@@ -45,7 +45,7 @@ An important limitation of health state transition models, at least the type we 
 
 Now that we have a handle on the basics of model design, let’s talk a bit about building them using the R language.
 
-[Next Chapter](healthyuncertainty.github.io/RGuide/Chapter2)
- 
 [^1]: *A quick note on nomenclature*: in this guide I will prefer the term “Health State Transition” model. These types of models are often called “Markov models”, “Health Simulation models” or sometimes simply “health economic models”. The semantic differences are trivial, but for reasons that are not worth exploring too deeply, I prefer “Health State Transition”.
 [^2]: This, incidentally, is related to why they’re sometimes called “Markov models”.
+
+[Next Chapter](healthyuncertainty.github.io/RGuide/Chapter2)

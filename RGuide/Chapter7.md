@@ -18,4 +18,4 @@ Thanks for reading, and happy modeling!
 
 [headshot]: https://www.dropbox.com/s/9i3wzfor7hw99s2/IAC%20Headshot.jpg?dl=1 "Thanks!"
 
-[Back home](healthyuncertainty.github.io)
+[Back home](http://healthyuncertainty.github.io)

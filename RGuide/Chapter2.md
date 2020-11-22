@@ -24,3 +24,7 @@ I don’t recommend using the normal R user interface. It’s frustrating and li
 - [RStudio](https://rstudio.com/): This is the best solution that I know of for the limitations of R. RStudio allows you to code in one part of the screen, submit code through a ‘run’ button and see results in another part, keep track of all of the objects you’ve created in a third part, and displays graphs in a fourth. It’s a handy all-in-one. It also has built-in wizards for importing data, which is very handy.
 
 Both Tinn-R and RStudio are free to download.
+
+[Next Chapter](http://healthyuncertainty.github.io/Chapter3)
+[Previous Chatper](http://healthyuncertainty.github.io/Chapter1)
+[Back to Start](http://healthyuncertainty.github.io/RGuide/Introduction)

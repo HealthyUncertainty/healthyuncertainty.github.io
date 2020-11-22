@@ -82,6 +82,6 @@ I’m not sure what I can say about these outputs that isn’t obvious just by l
 
 The model is now built. It has all of the pieces you’ll need to propose and conduct cost-effectiveness analysis. Technically, if you are only interested in learning how to build models, you’ve got all the information you need and you can stop reading now. If you do decide to stick around for the next chapter, I am going to conduct a cost-effectiveness analysis exercise, complete with data analysis and tables/figures suitable for publication. I will show how to use the model we’ve built to perform uncertainty analysis.
 
-[Next Chapter](healthyuncertainty.github.io/RGuide/Chapter5)
-[Previous Chapter](healthyuncertainty.github.io/RGuide/Chapter4_5)
-[Back to Start](healthyuncertainty.github.io/RGuide/Welcome)
+[Next Chapter](http://healthyuncertainty.github.io/RGuide/Chapter5)
+[Previous Chapter](http://healthyuncertainty.github.io/RGuide/Chapter4_5)
+[Back to Start](http://healthyuncertainty.github.io/RGuide/Introduction)

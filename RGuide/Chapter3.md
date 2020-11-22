@@ -621,5 +621,6 @@ I am not a developer nor am I an especially savvy coder. I originally began work
 
 Loops still have a ton of usefulness outside of the context we'll be using them for in this guide, so this knowledge is still useful.
 
-[Next Chapter](healthyuncertainty.github.io/RGuide/Chapter4)
-[Back to Start](healthyuncertainty.github.io/RGuide/Welcome)
+[Next Chapter](http://healthyuncertainty.github.io/RGuide/Chapter4_1)
+[Previous Chapter](http://healthyuncertainty.github.io/RGuide/Chapter2)
+[Back to Start](http://healthyuncertainty.github.io/RGuide/Introduction)
