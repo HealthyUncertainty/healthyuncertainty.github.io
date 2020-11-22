@@ -460,11 +460,12 @@ Okay. Not terribly interesting. Let’s try making a longer list with the same m
 ~~~
 16	test2 <- rnorm(1000,25,5)
 ~~~
+
+I won’t print the output, since it would be a string of 1000 numbers, and you probably know what numbers look like. I will, however, print the resulting histogram:
+
 ![alt text][hist2]
 
 [hist2]: https://www.dropbox.com/s/xwe2b2d0fvzdvy3/3_3%20Larger%20histogram.jpg?dl=1 "Another histogram of the outputs"
-
-I won’t print the output, since it would be a string of 1000 numbers, and you probably know what numbers look like. I will, however, print the resulting histogram:
  
 Exactly as we’d expect, we see a normally-distributed set of numbers with a mean of ~25. We can verify this easily. The ‘summary’ function will give us max/min values, along with 25%, 50%, and 75% quantiles, and the mean for a vector. We can also specify specific quantiles we’re interested in (5% and 95%, in this case) using the ‘quantile’ function:
 ~~~
