@@ -141,7 +141,7 @@ Since our hypothetical research question doesn’t make any change to the utilit
 187  }
 ~~~
 We can now run the model and calculate the LYG, QALYs, and costs that it outputs. Calculating these values is very straightforward to do from the arrays.
-Life Years is defined as the cumulative sum of all years lived in the model. All we have to do is count up everyone who isn’t dead (i.e., not in Health State Z ). QALYs are calculated in the same way. With costs, because we do have costs that accumulate as people transition into Health State Z, we have to make sure we include them:
+Life Years is defined as the cumulative sum of all years lived in the model. All we have to do is count up everyone who isn’t dead (i.e., not in Health State Z). QALYs are calculated in the same way. With costs, because we do have costs that accumulate as people transition into Health State Z, we have to make sure we include them:
 ~~~
 191	# Create blank utilities for LYG, QALY, and costs from both arms
 192	    LYG_A <- LYG_B <- QALY_A <- QALY_B <- COST_A <- COST_B <- 
@@ -396,7 +396,7 @@ Optimal intervention (max expected utility) for k=50000: A
 
 ~~~
 
-The Output suggests that at a WTP value of $50,000/LYG, A is 98.7% cost-effective. You can use whatever WTP value is most appropriate for your decision-making context.
+The Output suggests that at a WTP value of $50,000/LYG, A has a 98.7% probability of being considered cost-effective compared to B. You can use whatever WTP value is most appropriate for your decision-making context.
 
 [Next Chapter >](http://healthyuncertainty.github.io/RGuide/Chapter6)
 

@@ -14,8 +14,8 @@ If you’ve found this guide helpful, or if there’s anything that you think is
 
 Thanks for reading, and happy modeling!
 
-![alt text][headshot]
+![alt text][The98]
 
-[headshot]: https://www.dropbox.com/s/9i3wzfor7hw99s2/IAC%20Headshot.jpg?dl=1 "Thanks!"
+[The98]: https://www.dropbox.com/s/dpcdr1mesascr59/The98.jpg?dl=1 "Thanks!"
 
 [Back home](http://healthyuncertainty.github.io)
