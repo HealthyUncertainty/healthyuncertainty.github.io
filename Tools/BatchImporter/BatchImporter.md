@@ -268,8 +268,9 @@ Finally, once the loop has completed and the values have been drawn for every ro
 ~~~
 
 # Run the ImportVars function from the batch importer and our Excel table
->varlist <- ImportVars(Inputs, num_iter = 10)
+> varlist <- ImportVars(Inputs, num_iter = 10)
 > varlist$df_psa_input
+
       P_WtoX     P_XtoW     P_XtoY    P_YtoZ       P_W      C_W       C_X C_Ytransition      C_Y C_Ztransition       U_W       U_X       U_Y  RR_treat PSA_num Discount_O
 1  0.2596917 0.05281991 0.12723293 0.5762349 0.7580821 340.5340  611.7346     3079.0557 660.5228      760.2053 0.9987835 0.8962857 0.2885595 0.8994235    5000      0.015
 2  0.2846968 0.05296982 0.08984181 0.5004828 0.7348083 317.5305  855.0744     1471.4220 765.3264     1202.4247 0.9947569 0.9056277 0.4312483 0.8443148    5000      0.015
