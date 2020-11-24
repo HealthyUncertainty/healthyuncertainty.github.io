@@ -259,6 +259,7 @@ Once we've sampled the vector of values ('prob_vector') then we append the corre
   # Pass the object into the global environment
   return(outlist) 
 }
+~~~
 
 Finally, once the loop has completed and the values have been drawn for every row in the Inputs table, we're going to do a quick cleanup step where we remove the 'temp' column from our dataframe (I told you we would!) and then create our final object 'outlist'. This object contains the input names, means, and probabilistically sampled values, as well as our PSA dataframe for 'dampack'. The 'return' argument passes that object into the global environment so you can call it whenever you need it.
 
