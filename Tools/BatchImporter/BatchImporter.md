@@ -68,11 +68,11 @@ So what I've built is a fast and easy way of popping parameter values from the t
 
 **Steps:**
 
-- Set up your Excel inputs table
-- Import the inputs from Excel into R
-- Define shape variables for beta- and gamma-distributed parameters
-- Define the 'ImportVars' function
-- Run the 'ImportVars' function on your imported values
+1. Set up your Excel inputs table
+2. Import the inputs from Excel into R
+3. Define shape variables for beta- and gamma-distributed parameters
+4. Define the 'ImportVars' function
+5. Run the 'ImportVars' function on your imported values
 
 ## Method
 
