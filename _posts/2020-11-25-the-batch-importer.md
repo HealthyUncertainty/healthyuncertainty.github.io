@@ -4,6 +4,8 @@ subtitle: Import multiple variables in a single step
 tags: [R, tools]
 ---
 
+[**Get the code**](https://github.com/HealthyUncertainty/healthyuncertainty.github.io/blob/master/Tools/BatchImporter/ImportVars.R)
+
 The first R tool that I'm going to write up is what I call the Batch Importer. I sort of describe an early version of this tool in Chapter 4 of the R Guide, but it's been refined considerably since then.
 
 When you read a paper about a cost-effectiveness model, most of them have a table that looks something like this:
@@ -51,7 +53,7 @@ So what I've built is a fast and easy way of popping parameter values from the t
 
 # The Batch Importer
 
-[##**Get the code**](https://github.com/HealthyUncertainty/healthyuncertainty.github.io/blob/master/Tools/BatchImporter/ImportVars.R)
+[**Get the code**](https://github.com/HealthyUncertainty/healthyuncertainty.github.io/blob/master/Tools/BatchImporter/ImportVars.R)
 
 **Purpose:** This tool takes input values from an Excel file and converts them into parameter values that can be used for probabilistic analysis.
 
@@ -290,3 +292,5 @@ In my experience, the batch importer is a relatively simple but really useful to
 I may (especially if prompted) periodically update the R file to include new distributions. If you add new ones yourself, please let me know so I can add them too.
 
 **A quick note about 'dampack' and 'bcea'**: I also favour the use of ['bcea'](https://cran.r-project.org/web/packages/BCEA/index.html), developed by Gianluca Baio, Andrea Berardi, and Anna Heath. I suggest familiarizing yourself with both packages and use whichever best suits your needs. They are both reliably excellent for doing conventional CEA, but have different features and requirements.
+
+[**Get the code**](https://github.com/HealthyUncertainty/healthyuncertainty.github.io/blob/master/Tools/BatchImporter/ImportVars.R)
