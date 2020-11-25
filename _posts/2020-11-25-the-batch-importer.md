@@ -254,6 +254,9 @@ Finally, once the loop has completed and the values have been drawn for every ro
 
 ~~~
 # Run the ImportVars function from the batch importer and our Excel table
+> library(readxl)
+> Inputs <- read_excel("Model Inputs.xls") #The Excel file name
+> Inputs <- subset(Inputs, Value >-1) #Remove blank rows
 > varlist <- ImportVars(Inputs, num_iter = 10)
 > varlist$df_psa_input
 ~~~
