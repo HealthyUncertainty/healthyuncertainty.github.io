@@ -76,7 +76,7 @@ So what I've built is a fast and easy way of popping parameter values from the t
 
 # Step 1: Set up your Excel inputs table
 
-All of the inputs into our model are going to be read from a table in Excel. This makes it easy to enter and change values if you want, plus saves your model user (yourself, most likely) from having to much around in the code. The numbers in this table are totally arbitrary.
+All of the inputs into our model are going to be read from a table in Excel. This makes it easy to enter and change values if you want, plus saves your model user (yourself, most likely) from having to mess around in the code. The numbers in this table are totally arbitrary.
 
 ![A screenshot of an Excel table][modelinputs]
 
