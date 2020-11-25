@@ -254,30 +254,11 @@ Finally, once the loop has completed and the values have been drawn for every ro
 # Run the ImportVars function from the batch importer and our Excel table
 > varlist <- ImportVars(Inputs, num_iter = 10)
 > varlist$df_psa_input
-
-      P_WtoX     P_XtoW     P_XtoY    P_YtoZ       P_W      C_W       C_X C_Ytransition      C_Y C_Ztransition       U_W       U_X       U_Y  RR_treat PSA_num Discount_O
-1  0.2596917 0.05281991 0.12723293 0.5762349 0.7580821 340.5340  611.7346     3079.0557 660.5228      760.2053 0.9987835 0.8962857 0.2885595 0.8994235    5000      0.015
-2  0.2846968 0.05296982 0.08984181 0.5004828 0.7348083 317.5305  855.0744     1471.4220 765.3264     1202.4247 0.9947569 0.9056277 0.4312483 0.8443148    5000      0.015
-3  0.2680888 0.04280924 0.20146199 0.6168768 0.8184647 324.0258  775.7151      450.7113 907.7371     1042.3829 0.8867924 0.8308908 0.5262950 0.8738045    5000      0.015
-4  0.2735142 0.04507898 0.17813715 0.6483436 0.8180831 262.7691  735.5903     1489.0061 889.4779     4590.1239 0.9985252 0.8472439 0.5995543 0.8573139    5000      0.015
-5  0.2098688 0.05353100 0.17279853 0.6062529 0.5812322 194.1036  964.8445     1376.0223 746.6321     4093.8801 0.9973787 0.8827665 0.6617791 0.8283548    5000      0.015
-6  0.3352191 0.04349747 0.15397924 0.6152157 0.7581109 340.9404 1064.3307     1548.8394 635.2236      217.6474 0.9165212 0.8860039 0.8699650 0.8755927    5000      0.015
-7  0.3930294 0.04701956 0.18394286 0.6937759 0.4161987 328.1677  724.3684     1182.3268 670.9054     3431.7788 0.8616630 0.8269092 0.6189976 0.7557068    5000      0.015
-8  0.2175480 0.05133857 0.13561262 0.6457674 0.6675586 403.4932  888.5327     1656.0949 697.1276     2828.8220 0.9988978 0.8981145 0.8267458 0.9206355    5000      0.015
-9  0.2819282 0.05319575 0.11452413 0.5316889 0.6097538 335.5315 1149.8145     2278.6293 764.9652     3985.6072 0.9987857 0.7894789 0.6668908 0.8976457    5000      0.015
-10 0.3737842 0.05101345 0.18046223 0.6309722 0.6263561 346.5775  985.0259     1006.2068 633.9925      666.0498 0.9658003 0.8056436 0.4793630 0.8296739    5000      0.015
-   Discount_C
-1       0.015
-2       0.015
-3       0.015
-4       0.015
-5       0.015
-6       0.015
-7       0.015
-8       0.015
-9       0.015
-10      0.015
 ~~~
+
+![The output of the dataframe][dfoutput]
+
+[dfoutput]: https://www.dropbox.com/s/ubzls9hkwngutp9/modelinputs.jpg?dl=1
 
 So what we're looking at is what happens when we run the ImportVars for a small value of 'num_iter' (in this case 10 was chosen arbitrarily)[^7], and then look at the 'df_psa_input'. You'll see that each column is named based on the InputName in the Inputs object, and contains 'num_iter' probabilistically-sampled values based on their respective mean and error, according to the variable type. You will also notice that the columns corresponding to our type '9' inputs are repetitions of their mean value, and do not vary. If you run it yourself you'll see that the 'varlist' object also contains the other lists with names, mean values for deterministic analysis, and probabilistically-sampled values.
 

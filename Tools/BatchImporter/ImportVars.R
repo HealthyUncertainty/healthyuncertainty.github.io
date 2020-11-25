@@ -39,7 +39,7 @@ ImportVars <- function(input_table, num_iter){
   # Read in the table one row at a time
   for (i in 1:nrow(input_table)){
     var <- input_table[i,]
-    varname <- var$Parameter
+    varname <- var$InputName
     vartype <- var$Type
     varmean <- var$Value
     varsd   <- var$Error

@@ -21,11 +21,11 @@
   #View(Inputs)
   
 ### LOAD THE IMPORT FUNCTION
-  source("/ImportVars.R")
+  source("ImportVars.R")
   
 ### RUN THE IMPORT FUNCTION
   # Specify the number of probabilistic draws you want to make
-  varlist <- ImportVars(Inputs, num_iter = 1000)
+  varlist <- ImportVars(Inputs, num_iter = 10)
   
 ### PASS VARIABLES INTO THE GLOBAL ENVIRONMENT
   # Deterministically (just means)
