@@ -258,7 +258,7 @@ Finally, once the loop has completed and the values have been drawn for every ro
 
 ![The output of the dataframe][dfoutput]
 
-[dfoutput]: https://www.dropbox.com/s/ubzls9hkwngutp9/modelinputs.jpg?dl=1
+[dfoutput]: https://www.dropbox.com/s/v9km62p4qiapxfu/dfoutput.jpg?dl=1
 
 So what we're looking at is what happens when we run the ImportVars for a small value of 'num_iter' (in this case 10 was chosen arbitrarily)[^7], and then look at the 'df_psa_input'. You'll see that each column is named based on the InputName in the Inputs object, and contains 'num_iter' probabilistically-sampled values based on their respective mean and error, according to the variable type. You will also notice that the columns corresponding to our type '9' inputs are repetitions of their mean value, and do not vary. If you run it yourself you'll see that the 'varlist' object also contains the other lists with names, mean values for deterministic analysis, and probabilistically-sampled values.
 
