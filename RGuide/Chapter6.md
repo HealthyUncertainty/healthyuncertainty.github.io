@@ -4,7 +4,7 @@ title: Chapter 6 - Discussion and Limitations
 permalink: /RGuide/Chapter6
 ---
 
-# Chapter 6 - Discssion and Limitations
+# Chapter 6 - Discussion and Limitations
 
 The most daunting part of using R, in my experience, is the fact that you start with a blank page and a blinking cursor. There’s no pulldown menus to tell you what functions to use, no helpful wizards to get you started – the possibilities are endless. This terrified me when I began coding. However, once I got past the initial shock of the way the software is set up, I quickly realized that the broad scope of R meant that I could build models with any level of complexity I wanted, using only a handful of rudimentary commands. Basically, as long as you can work it out in your head, R can do it.
 

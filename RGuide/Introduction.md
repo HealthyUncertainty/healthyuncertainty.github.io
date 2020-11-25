@@ -38,4 +38,11 @@ All comments, concerns, questions, and corrections should be left as comments be
 
 Thanks for reading, and I hope you find this guide useful. Let’s get going!
 
-[Chapter 1](http://healthyuncertainty.github.io/RGuide/Chapter1)
+### Table of Contents
+[Chapter 1 - Building Models](http://healthyuncertainty.github.io/RGuide/Chapter1)
+[Chapter 2 - Getting and Installing R](http://healthyuncertainty.github.io/RGuide/Chapter2)
+[Chapter 3 - Some Basic Commands in R](http://healthyuncertainty.github.io/RGuide/Chapter3)
+[Chapter 4 - Building a Health State Transition Model in R](http://healthyuncertainty.github.io/RGuide/Chapter4_1)
+[Chapter 5 - Cost-Effectiveness Analysis](http://healthyuncertainty.github.io/RGuide/Chapter5)
+[Chapter 6 - Discussion and Limitations](http://healthyuncertainty.github.io/RGuide/Chapter6)
+[Chapter 7 - Conclusion](http://healthyuncertainty.github.io/RGuide/Chapter7)

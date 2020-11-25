@@ -19,9 +19,7 @@ These tables describe all the inputs into the model, and how they are related to
 When I first started building models, one of my big frustrations was figuring out "how do I turn a mean and standard deviation into random numbers?" This is straightforward enough for the normal distribution. We can generate some numbers (mean of 100 and SD of 20 chosen arbitrarily):
 
 ```r
-
 hist(rnorm(1000, mean=100, sd=20))
-
 ```
 
 ![A histogram][hist1]
@@ -35,7 +33,6 @@ Once you solve the conversion problem, you run into a different issue. If you wa
 Finally, there is a useability issue. If you're specifying your parameter values in the body of the code, making changes becomes a bit of a hassle: 
 
 ```r
-
 # Some imaginary parameters
 param1 <- rnorm(n, mean1, sd1)
 
@@ -46,7 +43,6 @@ param3 <- rbeta(n, shape1 = s1param3, shape2 = s2param3)
 ...
 
 paramN <- rgamma(n, shape = s1paramN, scale = s2paramN)
-
 ```
 
 This might be a snap if the number of parameters is small, but the larger that number gets the more lines of code you have to sift through, find the value you want, make the change that you want (with the converted parameter values!) and then re-run the code. A hassle. Good luck getting with someone who isn't comfortable in R to do that!
@@ -97,7 +93,6 @@ It's totally fine to leave the 'Description' column blank, since R doesn't use i
 Once you have your table saved in Excel, we use the 'readxl' package to import the values:
 
 ```r
-
 ### SET WORKING DIRECTORY (WHERE YOUR EXCEL FILE IS)
   setwd("//mydirectory")
 
@@ -106,7 +101,6 @@ Once you have your table saved in Excel, we use the 'readxl' package to import t
   library(readxl)
   Inputs <- read_excel("Model Inputs.xls") #The Excel file name
   Inputs <- subset(Inputs, Value >-1) #Remove blank rows
-
 ```
 
 Make sure you set 'mydirectory' to be where the Excel model is saved, or you will have to include the full path name in the "read_excel" step (i.e., Inputs <- read_excel("C:/whatever/.../Model Inputs.xls").
@@ -122,7 +116,6 @@ We're going to use the ['method of moments'](https://en.wikipedia.org/wiki/Metho
 Here's a pair of functions to do that:
 
 ```r
-
 bdist <- function(x, y){
   alpha <- x*((x*(1-x)/y^2) - 1)
   beta <- (1-x)*(x/y^2*(1-x) - 1)
@@ -132,7 +125,6 @@ gdist <- function(x, y){
   shape <- x^2/y^2
   scale <- y^2/x
   return(t(c(shape, scale)))}
-
 ```
 
 This creates two functions: 'bdist' and 'gdist' that take inputs 'x' and 'y', representing the mean and the SD respectively. When you run it, it returns a vector containing the two shape/scale parameters that are needed to perform the probabilistic sampling function for the beta and gamma distribution respectively[^3].
@@ -144,7 +136,6 @@ This creates two functions: 'bdist' and 'gdist' that take inputs 'x' and 'y', re
 Here's where the rubber meets the road. We're going to build a function that looks at our Inputs object one row at a time. For each row, it's going to consider the variable type and generate the appropriate shape/scale parameters for that distribution.
 
 ```r
-
 ImportVars <- function(input_table, num_iter){
   
   # Create blank lists to hold values
@@ -155,13 +146,11 @@ ImportVars <- function(input_table, num_iter){
   # empty dataframe the correct number of rows. It will be deleted
   # later in the code
   param_dataframe = data.frame(temp = 1:num_iter)
-
 ```
 
 First we define our function and ask it to accept two inputs: 'input_table' (our Inputs object) and 'num_iter', the number of probabilistic draws we want to perform. We then ask the function to create some blank lists and a blank dataframe to hold the sampled values. The 'temp' variable is there solely for the purpose of establishing the dimensions of the dataframe. We'll delete it later.
 
 ```r
-
  # Read in the table one row at a time
   for (i in 1:nrow(input_table)){
     var <- input_table[i,]
@@ -169,13 +158,11 @@ First we define our function and ask it to accept two inputs: 'input_table' (our
     vartype <- var$Type
     varmean <- var$Value
     varsd   <- var$Error
-
 ```
 
 Next, we're going to ask the function to loop through each row of 'input_table' and identify the key values we want - the variable name, the variable type, the mean, and the error - based on the column headings used in the Excel file. **THIS IS IMPORTANT:** the column headings must match exactly for this code to work. My suggestion would be to never change them, but if you do change them in the Excel file make sure you're also changing them in the code.
 
 ```r
-
     if (vartype == 1){
       # Beta distributed variables
       shape1 = as.numeric(bdist(varmean, varsd)[1])
@@ -216,7 +203,6 @@ Next, we're going to ask the function to loop through each row of 'input_table' 
       shape1 = as.numeric(varmean)
       prob_vector <- rep(shape1, num_iter)
     }
-
 ```
 
 For each model loop, we're telling the function to check what type of variable it is and then calculate the shape/scale values accordingly. 
@@ -226,7 +212,6 @@ Variable type '5' assumes that you're using an untransformed estimate of the RR 
 Variable type '9' just returns the mean value and doesn't do anything else. It's useful for values like the discount rates (as you see here) but also for any value you don't expect to vary between model runs (e.g., fee-for-service costs, the relative proportion of M/F sex in the population, number of tunnels in a health state, etc.).
 
 ```r
-
     # Populate the tables
     param_table_names[[i]] <- varname
     param_table_deterministic[[i]] <- varmean
@@ -238,7 +223,6 @@ Variable type '9' just returns the mean value and doesn't do anything else. It's
     param_dataframe <- cbind(param_dataframe, df_param)
     
   } # end loop
-
 ```
 
 Once we've sampled the vector of values ('prob_vector') then we append the corresponding information into the blank lists we created at the beginning of the loop. We also append a new column to our dataframe. That new column has a name that corresponds to the 'InputName' from the Excel file[^5].
@@ -246,7 +230,6 @@ Once we've sampled the vector of values ('prob_vector') then we append the corre
 [^5]: This distinction matters if you are going to use dampack to do EVPPI. I am not going to spend any time explaining what EVPPI is, I'm merely going to note that if you want to calculate it with dampack you are going to have to use the EXCEL-BASED names, not whatever you end up calling the parameter within the model itself.
 
 ```r
-
   # Remove temporary variable
   param_dataframe = subset(param_dataframe, select = -c(temp))
   
@@ -265,8 +248,7 @@ Finally, once the loop has completed and the values have been drawn for every ro
 
 ## Let's see it in action
 
-```r
-
+~~~
 # Run the ImportVars function from the batch importer and our Excel table
 > varlist <- ImportVars(Inputs, num_iter = 10)
 > varlist$df_psa_input
@@ -293,17 +275,15 @@ Finally, once the loop has completed and the values have been drawn for every ro
 8       0.015
 9       0.015
 10      0.015
+~~~
 
-```
-
-So what we're looking at is what happens when we run the ImportVars for a small value of 'num_iter' (in this case 10 was chosen arbitrarily)[^7], and then look at the 'df_psa_input'. You'll see that each column is named based on the InputName in the Inputs object, and contains 'num_iter' probabilistically-sampled values based on their respective mean and error, according to the variable type. You will also notice that the columns corresponding to our discounting values are repetitions of their mean value, and do not vary. If you run it yourself you'll see that the 'varlist' object also contains the other lists with names, mean values for deterministic analysis, and probabilistically-sampled values.
+So what we're looking at is what happens when we run the ImportVars for a small value of 'num_iter' (in this case 10 was chosen arbitrarily)[^7], and then look at the 'df_psa_input'. You'll see that each column is named based on the InputName in the Inputs object, and contains 'num_iter' probabilistically-sampled values based on their respective mean and error, according to the variable type. You will also notice that the columns corresponding to our type '9' inputs are repetitions of their mean value, and do not vary. If you run it yourself you'll see that the 'varlist' object also contains the other lists with names, mean values for deterministic analysis, and probabilistically-sampled values.
 
 [^7]: Sharp eyes will have noticed that I included 'PSA_num' as an input. I do it this way because if you want your model user (again, usually you) to be able to run the model *entirely independently* of having to interact with the code, you'll want them to be able to specify this number in Excel. The way to code the model in that case would be to do: `ImportVars(Inputs, num_iter = as.numeric(Inputs[X,Y]))`, where X and Y are the row and column number that the mean value of PSA_num is stored in (15 and 4 in this case).
 
 Incidentally, if you wanted to pass your variables to the global environment you can do that simply:
 
 ```r
-
 ### PASS VARIABLES INTO THE GLOBAL ENVIRONMENT
   # Deterministically (just means)
   for (i in 1:length(varlist$varname)){
@@ -316,7 +296,6 @@ Incidentally, if you wanted to pass your variables to the global environment you
   for (i in 1:length(varlist$varname)){
     assign(paste(varlist$varname[i]), unlist(varlist$varprob[i]))
   }
-
 ```
 
 These will pass each variable, by name, into the global environment so you can use them without having to make reference to 'varlist'.
