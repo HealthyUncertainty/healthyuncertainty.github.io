@@ -4,9 +4,9 @@ subtitle: Import multiple variables in a single step
 tags: [R, tools]
 ---
 
-[**Get the code**](https://github.com/HealthyUncertainty/healthyuncertainty.github.io/blob/master/Tools/BatchImporter/ImportVars.R)
-
 The first R tool that I'm going to write up is what I call the Batch Importer. I sort of describe an early version of this tool in Chapter 4 of the R Guide, but it's been refined considerably since then.
+
+[**Get the code**](https://github.com/HealthyUncertainty/healthyuncertainty.github.io/blob/master/Tools/BatchImporter/ImportVars.R)
 
 When you read a paper about a cost-effectiveness model, most of them have a table that looks something like this:
 
