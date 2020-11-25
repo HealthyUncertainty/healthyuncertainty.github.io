@@ -51,6 +51,8 @@ So what I've built is a fast and easy way of popping parameter values from the t
 
 ### The Batch Importer
 
+[**Get the code**](https://github.com/HealthyUncertainty/healthyuncertainty.github.io/blob/master/Tools/BatchImporter/ImportVars.R)
+
 **Purpose:** This tool takes input values from an Excel file and converts them into parameter values that can be used for probabilistic analysis.
 
 **Data In:** An Excel file that is formatted to include input names, the mean and error terms, and a number describing variable 'type'.
