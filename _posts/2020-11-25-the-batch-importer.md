@@ -49,9 +49,9 @@ This might be a snap if the number of parameters is small, but the larger that n
 
 So what I've built is a fast and easy way of popping parameter values from the table you're used to seeing in a publication into an R model.
 
-### The Batch Importer
+# The Batch Importer
 
-[**Get the code**](https://github.com/HealthyUncertainty/healthyuncertainty.github.io/blob/master/Tools/BatchImporter/ImportVars.R)
+[##**Get the code**](https://github.com/HealthyUncertainty/healthyuncertainty.github.io/blob/master/Tools/BatchImporter/ImportVars.R)
 
 **Purpose:** This tool takes input values from an Excel file and converts them into parameter values that can be used for probabilistic analysis.
 
@@ -74,7 +74,7 @@ So what I've built is a fast and easy way of popping parameter values from the t
 
 ## Method
 
-# Step 1: Set up your Excel inputs table
+### Step 1: Set up your Excel inputs table
 
 All of the inputs into our model are going to be read from a table in Excel. This makes it easy to enter and change values if you want, plus saves your model user (yourself, most likely) from having to mess around in the code. The numbers in this table are totally arbitrary.
 
@@ -90,7 +90,7 @@ If you've read the R Guide, this table will look pretty familiar. There are thre
 
 It's totally fine to leave the 'Description' column blank, since R doesn't use it for anything. It's just there so you can keep track of which input is which. I also like having a pair of columns in there for the 'baseline' values but these aren't inputs, they're just for your reference in case you change something.
 
-# Step 2: Import the inputs from Excel into R
+### Step 2: Import the inputs from Excel into R
 
 Once you have your table saved in Excel, we use the 'readxl' package to import the values:
 
@@ -109,7 +109,7 @@ Make sure you set 'mydirectory' to be where the Excel model is saved, or you wil
 
 As a result of this step, we will have an object called 'Inputs' that contains all the values that are in the Excel table.
 
-# Step 3: Define shape variables for beta- and gamma-distributed parameters
+### Step 3: Define shape variables for beta- and gamma-distributed parameters
 
 We're going to use the ['method of moments'](https://en.wikipedia.org/wiki/Method_of_moments_(statistics)) approach to estimating the shape/scale parameters. This approximation means we are making some assumptions about the true shape of uncertainty around the paramter's mean. In English, there are many ways that a beta-distributed variable could have a mean of 'X' and a SD of 'Y', and the method of moments just picks one. But, given that we don't *have* any information about the shape of the uncertainty, the method of moments gets us close[^2].
 
@@ -133,7 +133,7 @@ This creates two functions: 'bdist' and 'gdist' that take inputs 'x' and 'y', re
 
 [^3]: Obviously Beta and Gamma are only two of many possible distributions you might want to import from. Hopefully it will be straightforward for you to take the same process for doing the method of moments for those distributions and make your own function so you can apply it to whatever other distribution you're working with. Please let me know if it isn't straightforward and I will write a post about that.
 
-# Step 4: Define the 'ImportVars' function
+### Step 4: Define the 'ImportVars' function
 
 Here's where the rubber meets the road. We're going to build a function that looks at our Inputs object one row at a time. For each row, it's going to consider the variable type and generate the appropriate shape/scale parameters for that distribution.
 
