@@ -10,7 +10,7 @@ When you read a paper about a cost-effectiveness model, most of them have a tabl
 
 ![A cost-effectiveness table][cetable]
 
-[cetable]: LINK GOES HERE
+[cetable]: https://www.dropbox.com/s/dicnki431e3cw0m/cetable.jpg?dl=1
 
 These tables describe all the inputs into the model, and how they are related to parameter values[^1]. They typically describe the uncertainty around each input, most commonly as an expression of error around the mean estimate. This is usually how these values are published in the literature themselves, so if you're building your own model that's almost certainly the information you have available to you.
 
@@ -26,7 +26,7 @@ hist(rnorm(1000, mean=100, sd=20))
 
 ![A histogram][hist1]
 
-[hist1]: (LINK GOES HERE)
+[hist1]: https://www.dropbox.com/s/whkwj3sc9nl5kup/hist1.jpg?dl=1
 
 But R doesn't make it so easy for beta and gamma distributed values. It doesn't allow you to simply use the mean and SD, it instead asks you to specify shape/scale parameters. While those parameters are *sometimes* available in a table summarizing cost-effectiveness model inputs, they're almost *never* available in the literature. You'll have to convert them yourself (which I didn't find to be particularly straightforward, but your mileage may vary).
 
@@ -82,7 +82,7 @@ All of the inputs into our model are going to be read from a table in Excel. Thi
 
 ![A screenshot of an Excel table][modelinputs]
 
-[modelinputs]: LINK GOES HERE
+[modelinputs]: https://www.dropbox.com/s/ubzls9hkwngutp9/modelinputs.jpg?dl=1
 
 If you've read the R Guide, this table will look pretty familiar. There are three relevant differences:
 
