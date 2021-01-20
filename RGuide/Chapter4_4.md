@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Chapter 4.4 - Define Inputs and Paramters in R
-permalink: /RGuide/Chapter4_3
+permalink: /RGuide/Chapter4_4
 ---
 
 # Chapter 4 - Building a Health State Transition Model in R
