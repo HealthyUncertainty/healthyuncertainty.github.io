@@ -26,11 +26,13 @@ Here's an illustration:
 
 Here is a pretty typical scenario, where we are trying to estimate the cost-effectiveness of a decision ("D1" in this case) that will affect people with late-stage disease. Let's say it's a new kind of chemotherapy. We build a model that starts with people diagnosed with late-stage disease, and includes the possibility that they might experience more severe disease, and that they might become terminally ill and eventually die. We can use this model to estimate the incremental costs and quality-adjusted survival impact of "D1".
 
+Let's now imagine a different policy decision "D2" that is used to treat people with less severe disease. Let's say it's a new and better surgical procedure.
+
 ***
 ![Fig2](https://www.dropbox.com/s/ay2rxk3xo7lcjyw/Fig2%20-%20D2%20piecewise.jpg?raw=1)
 ***
 
-Let's now imagine a different policy decision "D2" that is used to treat people with less severe disease. Let's say it's a new and better surgical procedure. In order to evaluate this new surgical approach, we would need to move the decision node "upstream" and build a model that includes all the possibilities that might happen to people after they get surgery. Such a model would still include all the health states relevant to "D1", but would include early stage disease outcomes, which are outside the scope of the D1 decision problem (failure of surgery to achieve local control, surgery-specific morbidity, etc.). And we could use this second model to evaluate the incremental costs and quality-adjusted survival of "D2".
+In order to evaluate this new surgical approach, we would need to move the decision node "upstream" and build a model that includes all the possibilities that might happen to people after they get surgery. Such a model would still include all the health states relevant to "D1", but would include early stage disease outcomes, which are outside the scope of the D1 decision problem (failure of surgery to achieve local control, surgery-specific morbidity, etc.). And we could use this second model to evaluate the incremental costs and quality-adjusted survival of "D2".
 
 Where the WDM framework enters the conversation is when we need to look at a bunch of different decisions that might be made simultaneously:
 
