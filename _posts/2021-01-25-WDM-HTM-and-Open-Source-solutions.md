@@ -50,8 +50,6 @@ This is the distinction that is drawn within [Health Technology Management (HTM)
 
 Going back to our example above, imagine that "D2" was already funded. HTM invites us to ask the question: what is the cost-effectiveness of adopting "D1", "D3", and "D4" and **removing** "D2" from the our funding formulary:
 
-[Fig4]
-
 ![Fig4](https://www.dropbox.com/s/w4zwtn4vy5rncqr/Fig4%20-%20NoD2.jpg?raw=1)
 
 In that case, by removing D3, we would be evaluating the cost-effectiveness of "D2" in the presence of these other policies (D1, D3, D4), compared to the status quo (D2 alone). We can conduct a HTM exercise by simply re-arranging the *adoption* question into a *disinvestment* question: is D2 still cost-effective within this new set of policies, or does a change in the overall pattern of health resource utilization from these other policies mean we are no longer getting good value for money from "D2"?
