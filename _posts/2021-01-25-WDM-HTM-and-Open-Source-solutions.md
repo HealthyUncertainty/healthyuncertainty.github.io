@@ -11,6 +11,8 @@ Here's a link to the talk, cued up to the most relevant part.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/skNc4aQrIiQ?start=1716" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
+
 I thought I would write this companion post to flesh out a couple of the arguments I had to breeze through.
 
 ## Whole Disease Models
