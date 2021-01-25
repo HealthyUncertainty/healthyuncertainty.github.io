@@ -23,25 +23,19 @@ The justification behind building models in this way, according to Tappenden, is
 
 Here's an illustration:
 
-***
 ![Fig1](https://www.dropbox.com/s/2gdf7rgjau99m4h/Fig1%20-%20D1%20piecewise.jpg?raw=1)
-***
 
 Here is a pretty typical scenario, where we are trying to estimate the cost-effectiveness of a decision ("D1" in this case) that will affect people with late-stage disease. Let's say it's a new kind of chemotherapy. We build a model that starts with people diagnosed with late-stage disease, and includes the possibility that they might experience more severe disease, and that they might become terminally ill and eventually die. We can use this model to estimate the incremental costs and quality-adjusted survival impact of "D1".
 
 Let's now imagine a different policy decision "D2" that is used to treat people with less severe disease. Let's say it's a new and better surgical procedure.
 
-***
 ![Fig2](https://www.dropbox.com/s/ay2rxk3xo7lcjyw/Fig2%20-%20D2%20piecewise.jpg?raw=1)
-***
 
 In order to evaluate this new surgical approach, we would need to move the decision node "upstream" and build a model that includes all the possibilities that might happen to people after they get surgery. Such a model would still include all the health states relevant to "D1", but would include early stage disease outcomes, which are outside the scope of the D1 decision problem (failure of surgery to achieve local control, surgery-specific morbidity, etc.). And we could use this second model to evaluate the incremental costs and quality-adjusted survival of "D2".
 
 Where the WDM framework enters the conversation is when we need to look at a bunch of different decisions that might be made simultaneously:
 
-***
 ![Fig3](https://www.dropbox.com/s/js213pj0kfcip95/Fig3%20-%20MultipleD.jpg?raw=1)
-***
 
 In this example, we also consider the cost-effectiveness of "D3" (maybe a preclinical screening program of some kind) and "D4" (a population-level intervention like poverty eradication or asbestos removal, where a huge number of people will experience a risk reduction). The issue is that these "upstream" decisions are going to affect the rate at which events occur "downstream". In this example, we might see a different mix of patients making it to the point where they *would be* affected by "D1" and/or "D2". That change in the case mix is obviously going to change the overall change in costs and survival for the health care system as a whole, and so we need a model that can look at all these changes at the same time.
 
@@ -59,9 +53,7 @@ This is the distinction that is drawn within [Health Technology Management (HTM)
 
 Going back to our example above, imagine that "D2" was already funded. HTM invites us to ask the question: what is the cost-effectiveness of adopting "D1", "D3", and "D4" and **removing** "D2" from the our funding formulary:
 
-***
 ![Fig4](https://www.dropbox.com/s/w4zwtn4vy5rncqr/Fig4%20-%20NoD2.jpg?raw=1)
-***
 
 In that case, by removing D3, we would be evaluating the cost-effectiveness of "D2" in the presence of these other policies (D1, D3, D4), compared to the status quo (D2 alone). We can conduct a HTM exercise by simply re-arranging the *adoption* question into a *disinvestment* question: is D2 still cost-effective within this new set of policies, or does a change in the overall pattern of health resource utilization from these other policies mean we are no longer getting good value for money from "D2"?
 
@@ -91,9 +83,7 @@ The model I worked on for my thesis was designed for this purpose, since I recog
 
 My approach to accomplishing this was to build a model that is made up of a bunch of interacting functions, each of which could be pulled out, reprogrammed to the user's specifications, then plugged back in to the rest of the model. The result looked something like this:
 
-***
 ![Fig5](https://www.dropbox.com/s/m62xsfp7v9jejaf/Fig5%20-%20Whole%20Model.jpg?raw=1)
-***
 
 Like the example shown above, the model has several pathways, from management of asymptomatic preclinical disease all the way through to end-of-life care. Each pathway is made up of a collection of subordinate processes that apply some kind of change to a simulated patient (change in expected survival, resource utilization, change in their utility, etc.), and tells the model what is scheduled to happen next. Any of these processes can be rewritten, and if it's rewritten properly you can run the adapted model and get the outputs you want.
 
