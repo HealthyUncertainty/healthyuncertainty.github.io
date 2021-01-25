@@ -20,7 +20,9 @@ The justification behind building models in this way, according to Tappenden, is
 
 Here's an illustration:
 
+***
 ![Fig1](https://www.dropbox.com/s/2gdf7rgjau99m4h/Fig1%20-%20D1%20piecewise.jpg?raw=1)
+***
 
 Here is a pretty typical scenario, where we are trying to estimate the cost-effectiveness of a decision ("D1" in this case) that will affect people with late-stage disease. Let's say it's a new kind of chemotherapy. We build a model that starts with people diagnosed with late-stage disease, and includes the possibility that they might experience more severe disease, and that they might become terminally ill and eventually die. We can use this model to estimate the incremental costs and quality-adjusted survival impact of "D1".
 
