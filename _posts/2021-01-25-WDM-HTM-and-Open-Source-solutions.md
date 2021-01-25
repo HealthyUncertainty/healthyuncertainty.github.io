@@ -22,7 +22,7 @@ The justification behind building models in this way, according to Tappenden, is
 
 Here's an illustration:
 
-[![Fig1](https://www.dropbox.com/s/2gdf7rgjau99m4h/Fig1%20-%20D1%20piecewise.jpg?raw=1)
+![Fig1](https://www.dropbox.com/s/2gdf7rgjau99m4h/Fig1%20-%20D1%20piecewise.jpg?raw=1)
 
 Here is a pretty typical scenario, where we are trying to estimate the cost-effectiveness of a decision ("D1" in this case) that will affect people with late-stage disease. Let's say it's a new kind of chemotherapy. We build a model that starts with people diagnosed with late-stage disease, and includes the possibility that they might experience more severe disease, and that they might become terminally ill and eventually die. We can use this model to estimate the incremental costs and quality-adjusted survival impact of "D1".
 
@@ -82,15 +82,13 @@ The model I worked on for my thesis was designed for this purpose, since I recog
 
 My approach to accomplishing this was to build a model that is made up of a bunch of interacting functions, each of which could be pulled out, reprogrammed to the user's specifications, then plugged back in to the rest of the model. The result looked something like this:
 
-[Fig5]
-
 ![Fig5](https://www.dropbox.com/s/m62xsfp7v9jejaf/Fig5%20-%20Whole%20Model.jpg?raw=1)
 
 Like the example shown above, the model has several pathways, from management of asymptomatic preclinical disease all the way through to end-of-life care. Each pathway is made up of a collection of subordinate processes that apply some kind of change to a simulated patient (change in expected survival, resource utilization, change in their utility, etc.), and tells the model what is scheduled to happen next. Any of these processes can be rewritten, and if it's rewritten properly you can run the adapted model and get the outputs you want.
 
 My approach to designing this beast was influenced by my (admittedly shallow) understanding of the [Open Source methodology](https://opensource.com/resources/what-open-source). Open Source is a set of principles that emphasize collaboration and transparency. The source code is publicly available and can be copied and edited by whomever wants to do so. Accordingly, while [the original WDM](https://pubmed.ncbi.nlm.nih.gov/23796288/) was built in proprietary Discrete Event Simulation software, my model was built in Python.
 
-In theory, this means anyone (including you, dear reader) can take the source code and use it themselves. In practice, this was written for a doctoral dissertation in my off-work hours, so it is unevenly documented and pretty clunky to run. There are a lot of elements of this work that, in hindsight, could use some serious improvement. Which is the other beauty of Open Source - the model is a living document that you can tinker with, share with collaborators, and update as you gain skills.
+In theory, this means anyone (including you, dear reader) can [take the source code](https://github.com/HealthyUncertainty/WDMOC) and use it themselves. In practice, this was written for a doctoral dissertation in my off-work hours, so it is unevenly documented and pretty clunky to run. There are a lot of elements of this work that, in hindsight, could use some serious improvement. There are also a bunch of technical and scientific problems I wasn't able to solve in version 1. Which is the other beauty of Open Source - the model is a living document that you can tinker with, share with collaborators, and update as you gain skills.
 
 My intention is to use this website to break down the methods I used to build this model, and in so doing add some helpful documentation that will allow people to use it themselves or make one of their own. This too will be done in my off-work hours though, so if you're *super impatient* to do this right away you will have to figure out a lot of this stuff on your own. But I spent years of my life on this and I'd hate for the sole result of all that effort to be the letters that come after my name.
 
