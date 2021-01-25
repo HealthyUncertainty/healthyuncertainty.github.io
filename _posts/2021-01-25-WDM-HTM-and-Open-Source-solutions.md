@@ -8,7 +8,9 @@ On Jan 20th I was invited to present to the [Network of Alberta Health Economist
 
 Here's a link to the talk, cued up to the most relevant part.
 
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/skNc4aQrIiQ?start=1716" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 [![Video Link](https://img.youtube.com/vi/skNc4aQrIiQ/0.jpg)](http://www.youtube.com/watch?v=skNc4aQrIiQ "My presentation to NOAHE")
 
