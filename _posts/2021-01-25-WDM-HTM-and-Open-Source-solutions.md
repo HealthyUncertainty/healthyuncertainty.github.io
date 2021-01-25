@@ -30,7 +30,7 @@ Here is a pretty typical scenario, where we are trying to estimate the cost-effe
 
 [Fig2]
 
-[![Fig2](https://www.dropbox.com/s/ay2rxk3xo7lcjyw/Fig2%20-%20D2%20piecewise.jpg?dl=1)
+![Fig2](https://www.dropbox.com/s/ay2rxk3xo7lcjyw/Fig2%20-%20D2%20piecewise.jpg?raw=1)
 
 Let's now imagine a different policy decision "D2" that is used to treat people with less severe disease. Let's say it's a new and better surgical procedure. In order to evaluate this new surgical approach, we would need to move the decision node "upstream" and build a model that includes all the possibilities that might happen to people after they get surgery. Such a model would still include all the health states relevant to "D1", but would include early stage disease outcomes, which are outside the scope of the D1 decision problem (failure of surgery to achieve local control, surgery-specific morbidity, etc.). And we could use this second model to evaluate the incremental costs and quality-adjusted survival of "D2".
 
@@ -38,7 +38,7 @@ Where the WDM framework enters the conversation is when we need to look at a bun
 
 [Fig3]
 
-[![Fig3](https://www.dropbox.com/s/js213pj0kfcip95/Fig3%20-%20MultipleD.jpg?raw=1)
+![Fig3](https://www.dropbox.com/s/js213pj0kfcip95/Fig3%20-%20MultipleD.jpg?raw=1)
 
 In this example, we also consider the cost-effectiveness of "D3" (maybe a preclinical screening program of some kind) and "D4" (a population-level intervention like poverty eradication or asbestos removal, where a huge number of people will experience a risk reduction). The issue is that these "upstream" decisions are going to affect the rate at which events occur "downstream". In this example, we might see a different mix of patients making it to the point where they *would be* affected by "D1" and/or "D2". That change in the case mix is obviously going to change the overall change in costs and survival for the health care system as a whole, and so we need a model that can look at all these changes at the same time.
 
@@ -58,7 +58,7 @@ Going back to our example above, imagine that "D2" was already funded. HTM invit
 
 [Fig4]
 
-[![Fig4](https://www.dropbox.com/s/w4zwtn4vy5rncqr/Fig4%20-%20NoD2.jpg?raw=1)
+![Fig4](https://www.dropbox.com/s/w4zwtn4vy5rncqr/Fig4%20-%20NoD2.jpg?raw=1)
 
 In that case, by removing D3, we would be evaluating the cost-effectiveness of "D2" in the presence of these other policies (D1, D3, D4), compared to the status quo (D2 alone). We can conduct a HTM exercise by simply re-arranging the *adoption* question into a *disinvestment* question: is D2 still cost-effective within this new set of policies, or does a change in the overall pattern of health resource utilization from these other policies mean we are no longer getting good value for money from "D2"?
 
@@ -90,7 +90,7 @@ My approach to accomplishing this was to build a model that is made up of a bunc
 
 [Fig5]
 
-[![Fig5](https://www.dropbox.com/s/m62xsfp7v9jejaf/Fig5%20-%20Whole%20Model.jpg?raw=1)
+![Fig5](https://www.dropbox.com/s/m62xsfp7v9jejaf/Fig5%20-%20Whole%20Model.jpg?raw=1)
 
 Like the example shown above, the model has several pathways, from management of asymptomatic preclinical disease all the way through to end-of-life care. Each pathway is made up of a collection of subordinate processes that apply some kind of change to a simulated patient (change in expected survival, resource utilization, change in their utility, etc.), and tells the model what is scheduled to happen next. Any of these processes can be rewritten, and if it's rewritten properly you can run the adapted model and get the outputs you want.
 
