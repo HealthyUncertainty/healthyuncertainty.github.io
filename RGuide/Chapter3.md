@@ -5,7 +5,7 @@ permalink: /RGuide/Chapter3
 ---
 
 # Chapter 3 - Some Basic Commands in R
-### 3.1 - Creating and Manupulating Objects
+### 3.1 - Creating and Manipulating Objects
 R uses what is called ‘object-oriented’ programming. What this means is that R allows you to create and define any health state or transition as an object that can be called up and manipulated. The most simple object that R creates is a ‘vector’, which can be thought of simply as a string of values that you define.
 
 Let’s try creating an object now. Let’s create a vector called “test”, and give it an arbitrary value of 100. The code for this process couldn’t be much simpler[^1] :
