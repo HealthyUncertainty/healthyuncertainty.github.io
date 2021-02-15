@@ -80,7 +80,7 @@ Now that we’ve identified all of the model parameters, let’s plunk them into
 | C_X | 3| cost of being in state X	| | |
 | C_Ytransition | 3|	cost of transitioning into state Y (a one-time cost) | | |
 | C_Y	|3|	cost of being in state Y		| | |
-| C_Ztransition	| 3 | cost of transitioning into state Y (a one-time cost)	| | |
+| C_Ztransition	| 3 | cost of transitioning into state Z (a one-time cost)	| | |
 | U_W |	4 |	utility value experienced by people in state W	| | |
 | U_X |	4 |	utility value experienced by people in state X	| | |
 | U_Y | 4 |	utility value experienced by people in state Y	| | |
