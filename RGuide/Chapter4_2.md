@@ -70,7 +70,7 @@ Now that we’ve identified all of the model parameters, let’s plunk them into
 | P_WtoX    | 1 | transition from state W to state X | | |
 | P_XtoW	| 1	| transition from state X to state W | | |			
 | P_XtoY	| 1 | transition from state X to state Y | | |
-| P_XtoY	| 1	| transition from state X to state Y | | |
+| P_YtoZ	| 1	| transition from state Y to state Z | | |
 | P_Wreturn	| 1 | probability of staying in state W	| | |
 | P_Xreturn	| 1	| probability of staying in state X | | |
 | P_Yreturn	| 1 | probability of staying in state Y	| | |
