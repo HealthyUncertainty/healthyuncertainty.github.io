@@ -114,15 +114,15 @@ n_trtPercentCE <- 100*ceac_obj$Proportion[n_midwtp]
 
 Let's check out our results.
 
-[WXYZ probabilistic output.jpeg]
+[https://github.com/HealthyUncertainty/healthyuncertainty.github.io/blob/master/WXYZ-Model/WXYZ%20probabilistic%20output.jpg?raw=true]
 
-[WXYZ CEAC output.jpeg]
+[https://github.com/HealthyUncertainty/healthyuncertainty.github.io/blob/master/WXYZ-Model/WXYZ%20CEAC%20output.jpg?raw=true]
 
-[WXYZ CEAC curve.jpeg]
+[https://github.com/HealthyUncertainty/healthyuncertainty.github.io/blob/master/WXYZ-Model/WXYZ%20CEAC%20curve.jpg?raw=true]
 
 Our new treatment generates an additional 0.57 QALYs at a cost of just under $5,000 per person (ICER = $8840 per QALY). If we think society is willing to pay $10,000 per QALY,[^2] there is a 65.8% probability that we would consider it cost-effective to fund the new treatment.
 
-[2]: This is almost certainly lower than the real value, which is probably something like 5x higher, it's just that the numbers are more interesting in this example if lambda is low.
+[^2]: This is almost certainly lower than the real value, which is probably something like 5x higher, it's just that the numbers are more interesting in this example if lambda is low.
 
 *[Back to top](https://healthyuncertainty.github.io/WXYZ-Model/)*
 

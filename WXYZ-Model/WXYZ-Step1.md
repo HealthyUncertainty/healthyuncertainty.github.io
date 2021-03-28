@@ -90,7 +90,7 @@ The biggest difference between my approach and the DARTH approach is that while 
 
 Here's a quick illustration:
 
-[WXYZ Transition Matrix.jpeg]
+![A screenshot of a transition matrix built in Excel](https://github.com/HealthyUncertainty/healthyuncertainty.github.io/blob/master/WXYZ-Model/WXYZ%20Transition%20Matrix.jpg?raw=true)
 
 So here we see that the transition probability of going from State W to State X (for example) is expressed where row X meets column Y. We can also see that the transitions between X and Y (and Y to Z) are *actually* transitions into our "Ytransition" state. Since the transition probability to Z (again, actually Ztransition) is assumed to be the same for everyone in the Y state, both Ytransition and Y have the same transition probabilities. All cohort members in Ztransition move to Z, and all members in Z stay in Z.
 

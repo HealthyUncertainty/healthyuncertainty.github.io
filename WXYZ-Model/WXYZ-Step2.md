@@ -23,7 +23,7 @@ source("ImportVars.R")
 
 The file 'functions_WYXZ.R' contains the functions we built in Step 1. Now that we've got the packages and function we need, we are going to set the controlling parameters for the model - the time horizon, the state names, the number of probabilistic runs, etc.[^1]
 
-[1]: You'll notice that I am specifying the discount factor within this step rather than drawing it from the table itself like we did in the Batch Importer example. This is really just a matter of personal choice and comfort. If you are expecting people to use the model without having to touch the code, you will have to define 'v_dwe' and 'v_dwc' *after* you run the Batch Importer.
+[^1]: You'll notice that I am specifying the discount factor within this step rather than drawing it from the table itself like we did in the Batch Importer example. This is really just a matter of personal choice and comfort. If you are expecting people to use the model without having to touch the code, you will have to define 'v_dwe' and 'v_dwc' *after* you run the Batch Importer.
 
 ```r
 # Strategy names
@@ -106,7 +106,7 @@ dampack::calculate_icers(df_cea$Cost, df_cea$Effect, df_cea$Strategy)
 
 And here's our result:
 
-[WXYZ Deterministic Output.jpeg]
+![A table containing the cost-effectiveness results](https://github.com/HealthyUncertainty/healthyuncertainty.github.io/blob/master/WXYZ-Model/WXYZ%20deterministic%20output.jpg?raw=true)
 
 The new treatment is cost-effective below a willingness-to-pay threshold of $8711.34 per QALY. This deterministic version of the model doesn't allow us to examine the impact of parameter uncertainty. In order to do that we'll need to make it probabilistic, which we will do in [Step 3](https://healthyuncertainty.github.io/WXYZ-Model/WXYZ-Step3/).
 
