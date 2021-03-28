@@ -1,5 +1,7 @@
 # Chapter 5 - Cost-Effectiveness Analysis
 
+##NOTE: There is an updated version of this model. [Get details here](https://healthyuncertainty.github.io/2021-03-27-The-WXYZ-Model/).
+
 Let us imagine that a new method for treating people in Health State X is being introduced. You, as a health economist, are being asked to make a recommendation to the Person In Charge Of Stuff (PICOS) about whether or not this new method is cost-effective. This new treatment method means a reduction in the risk of transition into Health State Y of 5% (with a standard error of 2%)[^1], but it comes at a cost of an additional $750 per cycle (standard error of $100).
 
 [^1]: A long footnote here. We don’t typically see risk reductions like this published in the literature. If we’re talking about clinical trials, it’s far more common to see a relative rate (RR) or hazard ratio (HR). We can’t apply a relative rate to a probability, because probabilities and rates are different concepts. The way I typically handle this issue is to convert the probability to a rate, apply the RR/HR to that value, then convert back to a transition probability. I’m not going to detail that here because it will require a long digression and explanation, but it is possible. For the purpose of this chapter it’s not worth getting bogged down in the details of where “P_riskmod” would come from. It’s just a low-effort way to illustrate some kind of incremental change.
