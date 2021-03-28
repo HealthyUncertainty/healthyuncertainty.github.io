@@ -108,4 +108,6 @@ And here's our result:
 
 [WXYZ Deterministic Output.jpeg]
 
-The new treatment is cost-effective below a willingness-to-pay threshold of $8711.34 per QALY. This deterministic version of the model doesn't allow us to examine the impact of parameter uncertainty. In order to do that we'll need to make it probabilistic, which we will do in Step 3.
+The new treatment is cost-effective below a willingness-to-pay threshold of $8711.34 per QALY. This deterministic version of the model doesn't allow us to examine the impact of parameter uncertainty. In order to do that we'll need to make it probabilistic, which we will do in [Step 3](WXYZ-Step3).
+
+*[Back to Step 1](WXYZ-Step1)*
