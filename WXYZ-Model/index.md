@@ -4,7 +4,7 @@ subtitle: The 4-state Markov model formatted to DARTH specifications
 tags: [R, tools, WXYZ model, Markov]
 ---
 
-As I mention in [The R Guide](http://healthyuncertainty.github.io/RGuide/Introduction), my method for building models in R is the product of some self-directed trial and error. It does not, therefore, match well with more conventional approaches to model building. It still *works*, and I still believe that "it works" is the only standard that really matters when it comes to code. However, the fact remains that my approach won't play well with others. That is a weakness that I have been content to let sit for a while, but have finally decided to correct. So over the next few chapters, we are going to convert the R Guide model into a more standard form. For reasons, I am going to align with the method used by [the DARTH Working Group](http://darthworkgroup.com).
+As I mention in [The R Guide](http://healthyuncertainty.github.io/RGuide/Introduction), my method for building models in R is the product of some self-directed trial and error. It does not, therefore, match well with more conventional approaches to model building. It still *works*, and I still believe that "it works" is the only standard that really matters when it comes to code. However, the fact remains that my approach won't play well with others. That is a weakness that I have been content to let sit for a while, but have finally decided to correct. So in a few simple steps, I'm going to walk you through the process I used to convert the R Guide model into a more standard form. For reasons, I am going to align with the method used by [the DARTH Working Group](http://darthworkgroup.com).
 
 A quick refresher on our model, which I am going to call "The WXYZ Model":
 
