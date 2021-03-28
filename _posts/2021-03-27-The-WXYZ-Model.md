@@ -19,19 +19,19 @@ We are going to build a program that runs the WXYZ model, both deterministically
 
 We are going to build three functions to make this model work. The first function will calculate all the parameter values we need to run the model, based on the inputs from our parameter table. The second function will take those parameter values and use them to construct the Markov matrix - the set of values that describe how the cohort moves between states in each cycle. The third function will generate the Markov trace - the cycle-by-cycle results as the cohort moves through the model for the length of the time horizon. We did all of this in the Guide, but in a notably different way.
 
-[More detail here](WXYZ-Step1)
+[More detail here](https://healthyuncertainty.github.io/WXYZ-Model/WXYZ-Step1)
 
 ## Step 2: build a deterministic version of the WXYZ model
 
 Next, we're going to build a deterministic version of the WXYZ model. This itself will be made up of a series of steps: loading our necessary packages and functions, inputting our model parameters, defining and constructing our necessary matrices and vectors, running the actual model, and then computing the cost-effectiveness results.
 
-[More detail here](WXYZ-Step2)
+[More detail here](https://healthyuncertainty.github.io/WXYZ-Model/WXYZ-Step2)
 
 ## Step 3: adapt the model to produce a probabilistic output
 
 Once we have the model running deterministically, we are going to adapt the code so that it will run repeatedly over a user-defined number of simulated runs, with randomly-sampled parameter values for each run. We'll look at a selection of useful probabilistic results.
 
-[More detail here](WXYZ-Step3)
+[More detail here](https://healthyuncertainty.github.io/WXYZ-Model/WXYZ-Step3)
 
 # The WXYZ Model
 
