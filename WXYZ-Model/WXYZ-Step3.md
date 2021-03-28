@@ -8,7 +8,7 @@ Now that we have designed our deterministic model, we can use most of the same c
 
 After we have loaded our packages and functions, defined our controlling parameters, and imported our model inputs, we are going to create some blank objects to hold data: arrays to hold our Markov trace for all simulated runs, and dataframes to hold our costs and QALYs.
 
-~~~
+```r
 # Arrays to hold the Markov trace outputs
   mtraceout_trt <- mtraceout_notrt <- array(0, dim = c(n_t+1, n_states, n_sim))
 
@@ -17,7 +17,7 @@ After we have loaded our packages and functions, defined our controlling paramet
                                nrow = n_sim,
                                ncol = n_str))
   colnames(df_c) <- colnames(df_e) <- v_names_str
-~~~
+```
 
 Now we set up our loop to perform the probabilistic analysis. Each loop completes the following steps:
 
@@ -28,7 +28,7 @@ Now we set up our loop to perform the probabilistic analysis. Each loop complete
 5. calculate costs and QALYs with 'make_cea'
 6. record outputs
 
-~~~
+```r
 # 'n_sim' probabilistic values are stored in a dataframe called 'df_values'
 df_values <- varlist$df_psa_input
 
@@ -70,7 +70,7 @@ for (j in 1:n_sim){
     df_e[j,]             <- cea_out$Effect
   
   } # End loop
-~~~
+```
 
 The loop is taking parameter data from the 'df_psa_input' object that is stored within the 'varlist' object created by the Batch Importer. Each row in 'df_psa_input' contains a probabilistically sampled set of parameter values. I am still using 'j' to denote the simulation number within each loop, which corresponds to the row number in 'df_values, which is a copy of 'varlist$df_psa_input'. As we loop through each step, the code adds a slice to each array and a row to each dataframe until it has computed these values 'n_sim' times.
 
@@ -85,7 +85,7 @@ The last part of this process is to view our results, calculated using 'dampack'
 
 So let's find those. First we'll need to create the kind of object 'dampack' uses to store PSA results. Then we can summarize the mean and incremental costs and mean ICER using the 'calculate_icers' function in 'dampack' and the outputs we recorded from the model in the last section of the code.
 
-~~~
+```r
 # Create a PSA object
 l_psa <- make_psa_obj(cost          = df_c, 
                       effectiveness = df_e, 
@@ -97,11 +97,11 @@ psa_sum <- summary(l_psa, calc_sds = TRUE)  # Estimate the mean costs, QALYs
 df_cea <- calculate_icers(cost       = psa_sum$meanCost,
                           effect     = psa_sum$meanEffect,
                           strategies = psa_sum$Strategy)
-~~~
+```
 
 Having done that, we want to know what strategy we should choose at various levels of lambda. There are lots of different ways to present this information, so I just arbitrarily chose to look at a range of values from 0 to 200% of lambda in increments of 5% of lambda. This gives us 41 values, which is enough to suggest the shape of the curve. The smaller the increments, the more points on your curve. From there we can use the 'ceac' function in 'dampack' to generate estimates of probability of cost-effectiveness at our various values of WTP, including lambda. We can pull out the middle estimate of those probabilities to get the value at lambda for the new treatment.
 
-~~~
+```r
 # Calculate percent cost-effectiveness of each strategy
 v_wtp        <- seq(0,2*lambda, by = lambda/20) # Vector of WTP values from 0 to 2*lambda
 ceac_obj     <- ceac(psa = l_psa, wtp = v_wtp)
@@ -110,7 +110,7 @@ summary_ceac <- summary(ceac_obj)
 # Calculate probability that new treatment is cost-effective at lambda
 n_midwtp       <- length(v_wtp)+1            
 n_trtPercentCE <- 100*ceac_obj$Proportion[n_midwtp]  
-~~~
+```
 
 Let's check out our results.
 
