@@ -6,7 +6,9 @@ tags: [R, tools]
 
 The first R tool that I'm going to write up is what I call the Batch Importer. I sort of describe an early version of this tool in Chapter 4 of the R Guide, but it's been refined considerably since then.
 
-[**Get the code**](https://github.com/HealthyUncertainty/healthyuncertainty.github.io/blob/master/Tools/BatchImporter/ImportVars.R)
+[**Get the code**](https://drive.google.com/drive/folders/1YcNX7wvn0m8GaROVqplxPBIyUIHxdt_P?usp=sharing)
+
+[**Fork the repository**](https://github.com/HealthyUncertainty/Batch-Importer)
 
 When you read a paper about a cost-effectiveness model, most of them have a table that looks something like this:
 
@@ -296,4 +298,6 @@ I may (especially if prompted) periodically update the R file to include new dis
 
 **A quick note about 'dampack' and 'bcea'**: I also favour the use of ['bcea'](https://cran.r-project.org/web/packages/BCEA/index.html), developed by Gianluca Baio, Andrea Berardi, and Anna Heath. I suggest familiarizing yourself with both packages and use whichever best suits your needs. They are both reliably excellent for doing conventional CEA, but have different features and requirements.
 
-[**Get the code**](https://github.com/HealthyUncertainty/healthyuncertainty.github.io/blob/master/Tools/BatchImporter/ImportVars.R)
+[**Get the code**](https://drive.google.com/drive/folders/1YcNX7wvn0m8GaROVqplxPBIyUIHxdt_P?usp=sharing)
+
+[**Fork the repository**](https://github.com/HealthyUncertainty/Batch-Importer)
