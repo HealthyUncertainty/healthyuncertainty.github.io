@@ -55,6 +55,12 @@ From there, all model results should be push-button simple to run. The following
 - The percent probability that the new treatment is cost-effective at lambda
 - The Cost-Effectiveness Acceptability Curve (CEAC)
 
+![A table of cost-effectiveness results](https://github.com/HealthyUncertainty/healthyuncertainty.github.io/blob/master/WXYZ-Model/WXYZ%20probabilistic%20output.jpg?raw=true)
+
+![Cost-effectiveness results at different WTP values](https://github.com/HealthyUncertainty/healthyuncertainty.github.io/blob/master/WXYZ-Model/WXYZ%20CEAC%20output.jpg?raw=true)
+
+![A cost-effectiveness acceptability curve](https://github.com/HealthyUncertainty/healthyuncertainty.github.io/blob/master/WXYZ-Model/WXYZ%20CEAC%20curve.jpg?raw=true)
+
 If you want to adapt this to build your own two-strategy model, you can [download the code](https://drive.google.com/drive/folders/1La5HSVNhJBMOsK2f4qIq7K8_uM1vygUJ?usp=sharing) for the WXYZ model or [fork it from GitHub](https://github.com/HealthyUncertainty/WXYZ-Model). You will need to do the following steps:
 
 1. update the names of your health states in Part 2
