@@ -24,6 +24,16 @@
     shape <- x^2/y^2
     scale <- y^2/x
     return(t(c(shape, scale)))}
+  
+### RATE AND PROBABILITY CONVERSION
+  
+  PtoR <- function(p,t){
+    Rate <- -1/t*log(1-p)
+    return(Rate)}
+  
+  RtoP <- function(r,t){
+    Prob <- 1-exp(-r*t)
+    return(Prob)}
 
 ImportVars <- function(input_table, num_iter){
   
