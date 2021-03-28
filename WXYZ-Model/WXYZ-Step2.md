@@ -111,3 +111,5 @@ And here's our result:
 The new treatment is cost-effective below a willingness-to-pay threshold of $8711.34 per QALY. This deterministic version of the model doesn't allow us to examine the impact of parameter uncertainty. In order to do that we'll need to make it probabilistic, which we will do in [Step 3](https://healthyuncertainty.github.io/WXYZ-Model/WXYZ-Step3/).
 
 *[Back to Step 1](https://healthyuncertainty.github.io/WXYZ-Model/WXYZ-Step1/)*
+
+*[Back to top]((https://healthyuncertainty.github.io/WXYZ-Model/)*
