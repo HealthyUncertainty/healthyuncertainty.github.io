@@ -39,7 +39,7 @@ Once we have the model running deterministically, we are going to adapt the code
 
 The model asks the user to input controlling parameters:
 
-- Location of 'Model Iputs.xls' (or whatever your Excel inputs file is called)
+- Location of 'Model Inputs.xls' (or whatever your Excel inputs file is called)
 - Number of probabilistic simulations
 - Number of cycles
 - Societal WTP (lambda)
