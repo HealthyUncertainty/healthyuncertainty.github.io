@@ -13,6 +13,8 @@ A quick refresher on our model, which I am going to call "The WXYZ Model":
 - There are transition-related costs for states Y and Z that occur when someone enters the state, after which state costs are different.
 - There is a treatment that modifies the risk of transition from X to Y.
 
+![A model schematic with bubbles and arrows](https://github.com/HealthyUncertainty/WXYZ-Model/blob/main/WXYZ%20Schematic.jpg?raw=true)
+
 We are going to build a program that runs the WXYZ model, both deterministically and probabilistically, using the DARTH approach. Luckily, I have some of the code for their "Sick, Sicker Model" I have adapted following three general steps:
 
 ## Step 1: build functions
