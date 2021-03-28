@@ -35,7 +35,7 @@ Once we have the model running deterministically, we are going to adapt the code
 
 # The WXYZ Model
 
-**[The full model code can be found here](https://github.com/HealthyUncertainty/healthyuncertainty.github.io/blob/master/WXYZ-Model/WXYZ%20model.Rmd)**. It allows you to toggle between deterministic and probabilistic, and pulls all functions in from a file called ['functions_WXYZ.R'](https://github.com/HealthyUncertainty/healthyuncertainty.github.io/blob/master/WXYZ-Model/functions_WXYZ.R). If you want to build your own two-strategy model, you can take the entire code repository for the WXYZ model or fork it from Github. You will need to do the following steps:
+**[The full model code can be found here](https://github.com/HealthyUncertainty/healthyuncertainty.github.io/blob/master/WXYZ-Model/WXYZ%20model.Rmd)**. It allows you to toggle between deterministic and probabilistic, and pulls all functions in from a file called ['functions_WXYZ.R'](https://github.com/HealthyUncertainty/healthyuncertainty.github.io/blob/master/WXYZ-Model/functions_WXYZ.R). If you want to build your own two-strategy model, you can [download the code](https://drive.google.com/drive/folders/1La5HSVNhJBMOsK2f4qIq7K8_uM1vygUJ?usp=sharing) for the WXYZ model or [fork it from GitHub](https://github.com/HealthyUncertainty/WXYZ-Model). You will need to do the following steps:
 
 1. update the names of your health states in Part 2
 2. re-write 'functions_WXYZ.R' to your model's specifications - its parameters, its transition probability matrix, etc.
