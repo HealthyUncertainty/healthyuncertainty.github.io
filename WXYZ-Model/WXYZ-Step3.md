@@ -99,7 +99,7 @@ df_cea <- calculate_icers(cost       = psa_sum$meanCost,
                           strategies = psa_sum$Strategy)
 ~~~
 
-Having done that, we want to know what strategy we should choose at various levels of lambda. There are lots of different ways to present this information, so I just arbitrarily chose to look at a range of values from 0 to 200% of lambda in increments of 5% of lambda. This gives us 41 values, which is enough to suggest the shape of the curve. The smaller the increments, the more points on your curve. From there we ca use the 'ceac' function in 'dampack' to generate estimates of probability of cost-effectiveness at our various values of WTP, including lambda. We can pull out the middle estimate of those probabilities to get the value at lambda for the new treatment.
+Having done that, we want to know what strategy we should choose at various levels of lambda. There are lots of different ways to present this information, so I just arbitrarily chose to look at a range of values from 0 to 200% of lambda in increments of 5% of lambda. This gives us 41 values, which is enough to suggest the shape of the curve. The smaller the increments, the more points on your curve. From there we can use the 'ceac' function in 'dampack' to generate estimates of probability of cost-effectiveness at our various values of WTP, including lambda. We can pull out the middle estimate of those probabilities to get the value at lambda for the new treatment.
 
 ~~~
 # Calculate percent cost-effectiveness of each strategy
