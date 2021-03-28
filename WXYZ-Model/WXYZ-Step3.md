@@ -123,3 +123,9 @@ Let's check out our results.
 Our new treatment generates an additional 0.57 QALYs at a cost of just under $5,000 per person (ICER = $8840 per QALY). If we think society is willing to pay $10,000 per QALY,[^2] there is a 65.8% probability that we would consider it cost-effective to fund the new treatment.
 
 [2]: This is almost certainly lower than the real value, which is probably something like 5x higher, it's just that the numbers are more interesting in this example if lambda is low.
+
+*[Back to top](https://healthyuncertainty.github.io/WXYZ-Model/)*
+
+*[Back to Step 1](https://healthyuncertainty.github.io/WXYZ-Model/WXYZ-Step1)*
+
+*[Back to Step 2](https://healthyuncertainty.github.io/WXYZ-Model/WXYZ-Step2)*
