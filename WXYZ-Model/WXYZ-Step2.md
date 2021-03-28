@@ -112,4 +112,4 @@ The new treatment is cost-effective below a willingness-to-pay threshold of $871
 
 *[Back to Step 1](https://healthyuncertainty.github.io/WXYZ-Model/WXYZ-Step1/)*
 
-*[Back to top]((https://healthyuncertainty.github.io/WXYZ-Model/)*
+*[Back to top](https://healthyuncertainty.github.io/WXYZ-Model/)*
