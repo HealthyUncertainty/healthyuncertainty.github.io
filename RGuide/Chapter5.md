@@ -1,6 +1,6 @@
 # Chapter 5 - Cost-Effectiveness Analysis
 
-##NOTE: There is an updated version of this model. [Get details here](https://healthyuncertainty.github.io/2021-03-27-The-WXYZ-Model/).
+## NOTE: There is an updated version of this model. [Get details here](https://healthyuncertainty.github.io/2021-03-27-The-WXYZ-Model/).
 
 Let us imagine that a new method for treating people in Health State X is being introduced. You, as a health economist, are being asked to make a recommendation to the Person In Charge Of Stuff (PICOS) about whether or not this new method is cost-effective. This new treatment method means a reduction in the risk of transition into Health State Y of 5% (with a standard error of 2%)[^1], but it comes at a cost of an additional $750 per cycle (standard error of $100).
 
