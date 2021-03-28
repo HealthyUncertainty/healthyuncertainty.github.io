@@ -4,7 +4,7 @@ subtitle: Build functions
 tags: [R, tools, WXYZ model, Markov]
 ---
 
-If you've never built a function in R before, the process is less complicated than it seems. [I've written up a quick summary with a simple example].
+If you've never built a function in R before, the process is less complicated than it seems. [I've written up a quick summary with a simple example](https://healthyuncertainty.github.io/2021-03-22-Building-Functions-in-R/).
 
 ### Function 1: "get_values"
 
@@ -220,4 +220,4 @@ With that done, we perform our matrix calculations for costs and utilities, and 
 
 We are going to use these functions to make the model run both [Step 2](https://healthyuncertainty.github.io/WXYZ-Model/WXYZ-Step2/) and [Step 3](https://healthyuncertainty.github.io/WXYZ-Model/WXYZ-Step3/).
 
-*[Back to top]((https://healthyuncertainty.github.io/WXYZ-Model/)*
+*[Back to top](https://healthyuncertainty.github.io/WXYZ-Model/)*
