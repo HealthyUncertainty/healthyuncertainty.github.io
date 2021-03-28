@@ -6,15 +6,15 @@ tags: [R, how-to]
 
 Functions are bits of code that tell R to run a set of instructions to an object (or a group of objects) and return a specific output. You could, for example write a function that tells R to calculate the 95% CI around a number based on its mean, standard deviation, and number of observations:
 
-[My95CI.jpeg]
+![The code to produce the function](https://github.com/HealthyUncertainty/healthyuncertainty.github.io/blob/master/_posts/2021-03-22%20Building%20Functions/My95CI.jpg)
 
 This is creating a function called “make_95CI”, and it takes three arguments: “mean”, “stdeviation”, and “observations”[^1]. It then calculates the standard error[^2] and therewith the upper and lower bounds of the interval. It then creates an object called “output”, which is a list containing three objects: “Mean”: the mean[^3]; “Lower95” and “Upper95”: the lower and upper bounds of the interval; and “CIRange”: an object expressing the range. Let’s look at an arbitrary example where we want the 95% Confidence Interval around a mean of 50, with standard deviation 10 and a sample size of 30 observations:
 
-[My95CIoutput.jpeg]
+![The output of the function](https://github.com/HealthyUncertainty/healthyuncertainty.github.io/blob/master/_posts/2021-03-22%20Building%20Functions/My95CIoutput.jpg)
 
 Lists have the useful property of having objects you can call by name. So if I just wanted to know the lower bound of the interval, I could do so really easily:
 
-[My95CIlower.jpeg]
+![The lower bound of the confidence interval](https://github.com/HealthyUncertainty/healthyuncertainty.github.io/blob/master/_posts/2021-03-22%20Building%20Functions/My95CIlower.jpg)
 
 The object “myCI” contains the “output” list that is returned by the function “make_95CI”. We can ask for the item “Lower95” from “myCI” by using the dollar sign ($) character. Dataframes also have this property, but while lists can have lots of different types of data within the same object, all objects within a dataframe must have the same length.
 
