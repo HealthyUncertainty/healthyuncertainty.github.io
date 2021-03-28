@@ -218,4 +218,4 @@ With that done, we perform our matrix calculations for costs and utilities, and 
 }
 ```
 
-We are going to use these functions to make the model run both Step 2 and Step 3.
+We are going to use these functions to make the model run both [Step 2](WXYZ-Step2) and [Step 3](WXYZ-Step3).
