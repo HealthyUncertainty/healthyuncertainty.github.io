@@ -204,14 +204,6 @@ for (j in 1:n_sim){
 ```
 
 # 05 Compute Cost-Effectiveness Results with 'dampack'
-DETERMINISTIC RESULTS
-```{r}
-# Vectors with costs and utilities by treatment
-df_cea <- make_cea(list_values, m_M_notrt, m_M_trt, v_dwe, v_dwc)
-# Print outputs using 'dampack'
-calculate_icers(df_cea$Cost, df_cea$Effect, df_cea$Strategy)
-```
-
 ```{r}
 # Create a PSA object
 l_psa <- make_psa_obj(cost          = df_c, 
@@ -235,10 +227,10 @@ n_midwtp       <- length(v_wtp)+1
 n_trtPercentCE <- 100*ceac_obj$Proportion[n_midwtp]  
 
 # Print results
-df_cea                                      
+print(df_cea)
   if (Probabilistic == TRUE){
-  ceac_obj
-  n_trtPercentCE
+  print(ceac_obj)
+  print(n_trtPercentCE)
 
   # Plot the CEAC
   plot(ceac_obj, 
