@@ -1,13 +1,13 @@
 ##################################################################################
 #                                                                                #
-#  TITLE: The 'WXYZ' model - probabilistic                                       #
+#  TITLE: The 'WXYZ' model                                                       #
 #                                                                                #
 #  AUTHOR: Ian Andrew Cromwell, PhD                                              #
 #                                                                                #
 #  NOTE: This code is a modified verion of a program written by the              #
 #        DARTH Working Group. Full attribution follows.                          #
 #                                                                                #
-#  PURPOSE: This code is a deterministic version of the Markov model that is     #
+#  PURPOSE: This is a deterministic version of the Markov model that is          #
 #            described on the 'Healthy Uncertainty' R Guide:                     #
 #                 https://healthyuncertainty.github.io/RGuide/Chapter5/          #
 #            It has been updated to reflect the DARTH method.                    #
