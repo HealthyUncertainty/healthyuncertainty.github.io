@@ -67,7 +67,9 @@ rate_XtoYtreat <- XtoYrate*RR_trt           # calculate rate under treatment
 prob_XtoYtreat <- RtoP(rate_XtoYtreat, 1)   # convert rate to probability
 ```
 
-What we do in these steps is to convert the transition probability into a rate, apply the *relative* rate (RR) of treatment, then convert that back into a transition probability. Because the cycle length is 1 year, the code uses '1' as the second argument in the rate/probability conversion functions. Generally speaking, I would suggest that you convert the value of rates and probabilities to match your cycle length when you enter them into your Model Inputs file rather than trying to convert them within the code.
+What we do in these steps is to convert the transition probability into a rate, apply the *relative* rate (RR) of treatment, then convert that back into a transition probability.[^foot1] 
+
+[^foot1]: The code uses '1' as the second argument in the rate/probability conversion functions. This input is needed for the function to work for reasons that aren't terribly important. I would strongly suggest that when you add your values to the model, you convert the value of rates and probabilities to match your cycle length.
 
 "get_values" will return a list (referred to as 'outvals' within the function) of named parameters that we can refer to in the subsequent steps of the model.
 
