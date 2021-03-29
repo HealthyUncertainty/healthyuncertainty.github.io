@@ -66,7 +66,7 @@ list_values <- get_values(df_values)
 list_tmatrix <- make_matrix(list_values)
 ```
 
-The next step is to create a matrix to hold the Markov trace - the record of how the cohort has moved between states across cycles. It starts at time 0, and then has 'n_t' additional rows for each model cycle for a total of n_t + 1. Each state is its ow column within the matrix, which correspond in order to the states in the Markov probability matrices that we made with 'make_matrix'. We're also going to populate the first row of the matrix with our starting values for states W and X - 'p_W' and 'p_X' respectively.
+The next step is to create a matrix to hold the Markov trace - the record of how the cohort has moved between states across cycles. It starts at time 0, and then has 'n_t' additional rows for each model cycle for a total of n_t + 1. Each state is its own column within the matrix, which correspond in order to the states in the Markov probability matrices that we made with 'make_matrix'. We're also going to populate the first row of the matrix with our starting values for states W and X - 'p_W' and 'p_X' respectively.
 
 ```r
 # create the markov trace matrix M capturing the proportion of the cohort in each state 
