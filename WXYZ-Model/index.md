@@ -67,12 +67,7 @@ If you want to adapt this to build your own two-strategy model, you can [downloa
 2. re-write 'functions_WXYZ.R' to your model's specifications - its parameters, its transition probability matrix, etc.
 2. update the starting row of the Markov trace matrix in Part 4
 
-As always, e-mail me if you run into problems and I'll do what I can to fix it right away.
-
-
-
-
-
+As always, e-mail me if you run into problems and I'll do what I can to fix it right away. I would also love to hear your thoughts/feedback in the comments. Do you have a different approach? Is this your first R model? Did you use WXYZ for something in particular? Drop a note below.
 
 
 
