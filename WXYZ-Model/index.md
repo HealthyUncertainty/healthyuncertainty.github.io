@@ -19,7 +19,7 @@ We are going to build a program that runs the WXYZ model, both deterministically
 
 ## Step 1: build functions
 
-We are going to build three functions to make this model work. The first function will calculate all the parameter values we need to run the model, based on the inputs from our parameter table. The second function will take those parameter values and use them to construct the Markov matrix - the set of values that describe how the cohort moves between states in each cycle. The third function will generate the Markov trace - the cycle-by-cycle results as the cohort moves through the model for the length of the time horizon. We did all of this in the Guide, but in a notably different way.
+We are going to build three functions to make this model work. The first function will calculate all the parameter values we need to run the model, based on the inputs from our Excel table. The second function will take those parameter values and use them to construct the Markov matrix - the set of values that describe how the cohort moves between states in each cycle. The third function will generate the Markov trace - the cycle-by-cycle results as the cohort moves through the model for the length of the time horizon. We did all of this in the Guide, but in a notably different way.
 
 [More detail here](WXYZ-Step1)
 
