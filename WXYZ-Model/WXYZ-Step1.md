@@ -57,7 +57,7 @@ get_values <- function(invals){
   outvals$p_X           <- 1 - outvals$p_W
 ```
 
-I've added a function to the Batch Importer that allows us to convert back and forth between rates and probabilities ('PtoR' and 'RtoP' respectively), since we are now using a Rate Ratio to describe the effect of treatment. This requires to to do a slightly new calculation to derive the treatment-adjusted probability of transition from X to Y:
+I've added a function to the Batch Importer that allows us to convert back and forth between rates and probabilities ('PtoR' and 'RtoP' respectively), since we are now using a Rate Ratio to describe the effect of treatment. This requires us to do a slightly new calculation to derive the treatment-adjusted probability of transition from X to Y:
 
 ```r
 # Treatment-specific probabilities
