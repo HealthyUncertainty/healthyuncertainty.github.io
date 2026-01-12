@@ -1,0 +1,20 @@
+---
+tags: [blog, personal, academia]
+---
+
+A bunch of years ago I used to write a very different kind of blog. It was much more political, and I used it as a way to organize some loose ideas that I had kicking around in my brain. I was resolved from the beginning that the blog was there to serve *me*, and that when it stopped being rewarding I would walk away from it. Which happened one day, rather abruptly.
+
+This blog will not contain much by the way of political musings. My politics don't have much to do with my work, except insofar as I was drawn to health economics because of my belief that health care should be provided on the basis of *need* not *ability to pay*, and that principles of justice demand that we must address that need equitably. Health economics addresses the long-term viability of the system yes, but it also speaks clearly to how resources ought to be allocated. While I do have opinions about my personal "ought" feelings, I will mostly keep them off this site.
+
+What this blog *will* reflect, though, is a very different outcropping of my set of personal beliefs and a desire to organize some different thoughts. I often find writing code to be a very frustrating and disempowering experience. It's sifting through StackOverflow pages to try and snatch a bit of syntax, and everything is written for people who know the difference between a vector and a tibble. They didn't cover that in any of my epi classes. As a result, I spend a ton of time on trying to get a set of numbers to interact with a different set of numbers and trying to decipher error messages.
+
+I've spent a fair amount of time on that, and I've had to solve some problems that I imagine other people have struggled with as well, or will in the future. Right now there is a movement around the world to move more people into writing code, and I know that there are better ways to proceed than to white-knuckle your way through every step of the process. I figure that some of the tricks I've developed could make the transition easier for people trying to do this work.
+
+But while that all sounds nice and friendly and altruistic, I do have an ulterior motive. Because I've figured out a lot of this stuff on my own, much of what I write won't necessarily be the best way to approach the problem. I've tried to be really up-front about the fact that I am self-taught on R, and that means most of what I post on here is going to use approaches that aren't "standard". The standard approaches are often the ones that make the most sense, but because I don't have a background in this I don't have a great grasp on what is the most sensible.
+
+So with all that being said, there are really two audiences for this blog that I'm hoping to engage with:
+
+1. Health economists who are R novices and who are looking for some specific tools to help them get started; and
+2. Experienced hands in R who can point out ways that these tools can be improved
+
+So I'd love to know: what brings you to this site? How long have you been interested in health economics? Are you an R veteran, or just getting started, or something in between? 
