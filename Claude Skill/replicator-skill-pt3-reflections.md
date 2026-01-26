@@ -1,13 +1,9 @@
 ---
-
-
+title: Replicating models with Claude; reflections from pilot test<br>
+subtitle: What I learned, and what I hope to see next<br>
+tags: [R, tools, AI, Replication]
 ---
 
-<hr>
-<h2 id="title-replicating-models-with-claude-reflections-from-pilot-testsubtitle-what-i-learned-and-what-i-hope-to-see-nexttags-r-tools-ai-replication">title: Replicating models with Claude; reflections from pilot test<br>
-subtitle: What I learned, and what I hope to see next<br>
-tags: [R, tools, AI, Replication]</h2>
-<h1 id="the-replicator-skill-reflections-from-pilot-test">The Replicator Skill; reflections from pilot test</h1>
 <h2 id="introduction">Introduction</h2>
 <p>In a previous post, I described the process by which I built a Skill for Claude that builds models in R based on model-building process developed by <a href="https://gianluca.statistica.it/books/online/r-hta/chapters/10.markov_models/markov-models">Thom, Soares, Krijkamp, and Lamrock (2025)</a>. The Skill builds models using a six-part process with built-in quality checks and sample code that helps increase the consistency and accuracy of the code Claude writes.</p>
 <p>I followed that post with another one describing an early ‘test drive’ of the Skill. The Skill was used to replicate a model of myasthenia gravis treatment that was described in a report by ICER.</p>
