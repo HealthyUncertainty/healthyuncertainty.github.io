@@ -1,12 +1,9 @@
 ---
-
-
+title: Replicating models with Claude AI
+subtitle: AI Skills may be the key that unlocks a new way to build models
+tags: [R, tools, AI, Replication]
 ---
 
-<hr>
-<h2 id="title-replicating-models-with-claude-aisubtitle-ai-skills-may-be-the-key-that-unlocks-a-new-way-to-build-modelstags-r-tools-ai-replication">title: Replicating models with Claude AI<br>
-subtitle: AI Skills may be the key that unlocks a new way to build models<br>
-tags: [R, tools, AI, Replication]</h2>
 <h1 id="using-claude-ai-to-replicate-decision-models">Using Claude AI to replicate decision models</h1>
 <h2 id="introduction">Introduction</h2>
 <p>Health Technology Assessment (HTA) requires the inclusion of economic analysis so that decision-makers have information about the impact their decisions will have on the health of the population - both in terms of direct health impact but also the health foregone by not choosing to fund something else. Health economists use decision models to quantify these trade-offs. Building these models in Microsoft Excel is the industry standard for global HTA, and is explicitly required in some countries. Critics of Excel-based models cite the meaningful improvements offered by building models using best practices from computer science and writing scripts in code rather than in spreadsheets.</p>
