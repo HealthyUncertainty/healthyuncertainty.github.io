@@ -1,0 +1,38 @@
+﻿# The r-hta-markov-replicator Skill; reflections from pilot test
+
+## Introduction
+
+In a previous post, I described the process by which I built a Skill for Claude that builds models in R based on model-building process developed by [Thom, Soares, Krijkamp, and Lamrock (2025)](https://gianluca.statistica.it/books/online/r-hta/chapters/10.markov_models/markov-models). The Skill builds models using a six-part process with built-in quality checks and sample code that helps increase the consistency and accuracy of the code Claude writes.
+
+I followed that post with another one describing an early 'test drive' of the Skill. The Skill was used to replicate a model of myasthenia gravis treatment that was described in a report by ICER.
+
+In this post I'm going to close with a few reflections on what stuck out to me about this process, and what I think comes next.
+
+## Thoughts on Open Models and AI
+
+AI is a powerful but imprecise tool. While it is often advertised as a frictionless push-button way of solving complex problems, the truth is that it may be better understood as a ‘[fairly accurate knife-thrower](https://www.youtube.com/watch?v=q_f3H5GMUY8)’. It makes predictions and is primarily motivated to give the user what it thinks the user wants. It is prone to hiding assumptions, making things up, and confidently asserting knowledge it does not possess. Replicating a model with an AI feels a bit like cross-examining an affable witness at a trial. The user has to be very specific and unambiguous in what they ask for, lest they get an enthusiastic but misleading answer.
+
+From this I conclude two important things. First, health economists will need to have a very strong grasp on model theory and best practices in order to use these tools appropriately. It would be relatively easy to generate a model that appears well-built but contains design flaws that even the modeler wasn’t aware of. The Skill proposed in this paper does contain some validity checks, but they will not detect flawed assumptions or inappropriate methods.
+
+My second conclusion is that health economists should get better acquainted with AI so that they can understand its shortcomings and flaws. I myself have been quite strongly biased against AI since first hearing about it. However, I finally began finding practical applications for it and was motivated to become at least passably familiar. Working with AI has exposed me to its incredible potential both for generating extremely useful code and for making mistakes that no human being would. Understanding the ways and frequency that AI gets things wrong will make it easier for health economists to produce internally valid models.
+
+## Implications of this work
+The original ICER MG model took the combined efforts of twelve authors with expertise ranging from Pharmacy to Medicine to Health Economics, among others. I cannot estimate the amount of time it took the authors to design, build, parameterize, and validate the model but the timeline for this process is typically measured in months (at least). Such an undertaking, while less costly than a clinical trial, nevertheless can cost hundreds of thousands of dollars to employ teams of people.
+
+It took me 20 minutes to replicate their work. It cost me a $30 subscription fee. I did it on my own at my kitchen table on a Macbook Air, motivated primarily by curiosity. There are profound implications to the fact that individual people have ready access to technology allowing them to replicate in minutes something that takes months to produce. These implications suggest the potential destabilizing of the existing market for health economic models. They also suggest that HTA agencies may no longer have the luxury of waiting to decide whether or not to accept R-based models. The exercise above demonstrates that anyone with sufficient knowledge of health economics can create a functioning Markov model without having written a single line of code (or having paid a single consultant). 
+
+It occurs to me that even people *without* sufficient knowledge of health economics can create what an AI has enthusiastically assured them is a functioning Markov model without having written a single line of code. And good luck to the HTA agencies who are on the receiving end of those models.
+ 
+Putting the Skill out into the world therefore feels a little bit like prying open the lid on Pandora’s box. When I mentioned this feeling to a colleague, she wisely pointed out “if you don’t do it, somebody else will”. AI technology, for all its many flaws, is rapidly becoming widespread. HTA agencies, drug companies, and private-sector consultancies all have access to the same tools and the same information that I do. I didn’t even contribute very much unique knowledge in this exercise. I took a couple of publicly available texts and fed them into an inexpensive chatbot, along with some 5 year-old code I had lying around. A lot of people could have figured this out. It’s entirely possible that while I was writing this and getting feedback on it, someone else is getting ready to hit ‘Publish’ on a very similar idea!
+
+## What I hope comes next
+
+My motivation for doing this is in hoping that the proliferation of this technology and the way that it makes it very easy to do something that used to be very expensive and time-consuming and skill-intensive will inspire the community of Open Modelers to become more collaborative. NICE, the HTA agency in the UK, recently began to [publish reference models](https://www.nice.org.uk/corporate/ecd18). There are many more ICER models available for potential replication. NICE, CDA-AMC, and ICER are formally aligned in the [Health Economics Methods Advisory](https://icer.org/health-economics-methods-advisory-hema/) group (HEMA), announced in 2025. As these types of organizations develop methods alignment, they may also seek to tackle the questions of R and AI together.
+
+There is an important collaborative potential for groups like the [Decision Analytics in R for Technologies in Health](https://darth-git.github.io/darthweb/) (DARTH) and the [Open Source Models Special Interest Group](https://opensourcemodelgroup.wordpress.com/) (SIG) within the Society for Medical Decision Making (SMDM) as well. Groups like these seek to establish norms, guidance, and advance methods for the development of Open Source models. They are made up of health economists and researchers who see and will help shape the future proliferation of models built in R. Developing clear guidance for using AI to develop models would be a valuable and appropriate contribution to the global conversation.
+
+Beyond formal organizations, I hope that lowering the barrier to model development will create opportunities for collaboration from the broader community of health economic modelers and health services researchers. In addition to the dozens of ICER reports available at the [Open Science Foundation](https://osf.io/user/7awvd) there are countless journal articles, research protocols, graduate thesis manuscripts, and Technical Reports out in the world that describe health economic models in the level of detail needed to replicate them. These replication exercises will need thoughtful and skilled health economists to ensure their validity, adapt them to meet new decision problems, and maintain their digital infrastructure. Doing this could create a massive public good that would power potentially thousands of decision analyses, now and into the future.
+
+## Next steps for me
+
+Like any science worth doing, I am going to need to replicate my replication. There will be more case studies to come, and refinements to the Skill probably too!
