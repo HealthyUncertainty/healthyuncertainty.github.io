@@ -1,10 +1,13 @@
 ---
-title: Replicating Models with Claude AI part 2 - a case study
-subtitle: Replicating a myasthenia gravis model from a public source
-tags: [r-tools, ai, replication]
-comments: true
+
+
 ---
 
+<hr>
+<h2 id="title-replicating-models-with-claude-part-2-case-studysubtitle-replicating-a-myasthenia-gravis-model-from-a-public-sourcetags-r-tools-ai-replication">title: Replicating models with Claude part 2: case study<br>
+subtitle: Replicating a myasthenia gravis model from a public source<br>
+tags: [R, tools, AI, Replication]</h2>
+<h1 id="using-the-replicator-skill-case-study-1-myasthenia-gravis">Using the Replicator Skill; Case Study 1: myasthenia gravis</h1>
 <h2 id="introduction">Introduction</h2>
 <p><a href="https://healthyuncertainty.github.io/2026-01-25-Replicating-Models-using-Claude-AI/">In a previous post</a>, I described the process by which I built a Skill for Claude that builds models in R based on model-building process developed by <a href="https://gianluca.statistica.it/books/online/r-hta/chapters/10.markov_models/markov-models">Thom, Soares, Krijkamp, and Lamrock (2025)</a>. The Skill builds models using a six-part process with built-in quality checks and sample code that helps increase the consistency and accuracy of the code Claude writes.</p>
 <p>In this post, I describe an early ‘test drive’ of the Skill.</p>
@@ -140,7 +143,7 @@ The time horizon for the evaluation was 2 years. Cycle length was reported as on
 <td>ICER vs. CT</td>
 <td>$5,210,000</td>
 <td>$8,240,000</td>
-<td>Not great, Bob</td>
+<td><a href="https://www.youtube.com/watch?v=MpUWrl3-mc8">Not great, Bob</a></td>
 </tr>
 </tbody>
 </table><p>Notably, the replicated model produced a smaller estimate of incremental QALYs, compared to the reference report. This was both due to lower estimated QALYs in the eculizumab + CT arm, but also higher QALYs in the CT arm. The CT arm was also estimated to have lower costs than the reference did. The ICER for the two models was therefore also higher, mostly owing to a much smaller denominator (0.046 QALYs in the replicated model versus 0.15 in the reference model). While the absolute value of these differences is small, their impact on comparative cost-effectiveness estimates is dramatic in this case.</p>
