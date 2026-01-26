@@ -1,12 +1,12 @@
 ---
-
+id="title-replicating-models-with-claude-part-2-case-study
+subtitle-replicating-a-myasthenia-gravis-model-from-a-public-source
+tags-r-tools-ai-replication">
 
 ---
 
 <hr>
-<h2 id="title-replicating-models-with-claude-part-2-case-studysubtitle-replicating-a-myasthenia-gravis-model-from-a-public-sourcetags-r-tools-ai-replication">title: Replicating models with Claude part 2: case study<br>
-subtitle: Replicating a myasthenia gravis model from a public source<br>
-tags: [R, tools, AI, Replication]</h2>
+
 <h1 id="using-the-replicator-skill-case-study-1-myasthenia-gravis">Using the Replicator Skill; Case Study 1: myasthenia gravis</h1>
 <h2 id="introduction">Introduction</h2>
 <p><a href="https://healthyuncertainty.github.io/2026-01-25-Replicating-Models-using-Claude-AI/">In a previous post</a>, I described the process by which I built a Skill for Claude that builds models in R based on model-building process developed by <a href="https://gianluca.statistica.it/books/online/r-hta/chapters/10.markov_models/markov-models">Thom, Soares, Krijkamp, and Lamrock (2025)</a>. The Skill builds models using a six-part process with built-in quality checks and sample code that helps increase the consistency and accuracy of the code Claude writes.</p>
