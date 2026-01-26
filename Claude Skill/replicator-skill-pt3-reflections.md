@@ -1,12 +1,16 @@
 ---
-title: Replicating models with Claude; reflections from pilot test<br>
-subtitle: What I learned, and what I hope to see next<br>
-tags: [R, tools, AI, Replication]
+
+
 ---
 
+<hr>
+<h2 id="title-replicating-models-with-claude-reflections-from-pilot-testsubtitle-what-i-learned-and-what-i-hope-to-see-nexttags-r-tools-ai-replication">title: Replicating models with Claude; reflections from pilot test<br>
+subtitle: What I learned, and what I hope to see next<br>
+tags: [R, tools, AI, Replication]</h2>
+<h1 id="the-replicator-skill-reflections-from-pilot-test">The Replicator Skill; reflections from pilot test</h1>
 <h2 id="introduction">Introduction</h2>
-<p>In a previous post, I described the process by which I built a Skill for Claude that builds models in R based on model-building process developed by <a href="https://gianluca.statistica.it/books/online/r-hta/chapters/10.markov_models/markov-models">Thom, Soares, Krijkamp, and Lamrock (2025)</a>. The Skill builds models using a six-part process with built-in quality checks and sample code that helps increase the consistency and accuracy of the code Claude writes.</p>
-<p>I followed that post with another one describing an early ‘test drive’ of the Skill. The Skill was used to replicate a model of myasthenia gravis treatment that was described in a report by ICER.</p>
+<p><a href="https://healthyuncertainty.github.io/2026-01-25-Replicating-Models-using-Claude-AI/">In a previous post</a>, I described the process by which I built a Skill for Claude that builds models in R based on model-building process developed by <a href="https://gianluca.statistica.it/books/online/r-hta/chapters/10.markov_models/markov-models">Thom, Soares, Krijkamp, and Lamrock (2025)</a>. The Skill builds models using a six-part process with built-in quality checks and sample code that helps increase the consistency and accuracy of the code Claude writes.</p>
+<p>I followed that post with <a href="healthyuncertainty.github.io/replicator-skill-pt2-case-study">another one describing an early ‘test drive’ of the Skill</a>. The Skill was used to replicate a model of myasthenia gravis treatment that was described in a report by ICER.</p>
 <p>In this post I’m going to close with a few reflections on what stuck out to me about this process, and what I think comes next.</p>
 <h2 id="thoughts-on-open-models-and-ai">Thoughts on Open Models and AI</h2>
 <p>AI is a powerful but imprecise tool. While it is often advertised as a frictionless push-button way of solving complex problems, the truth is that it may be better understood as a ‘<a href="https://www.youtube.com/watch?v=q_f3H5GMUY8">fairly accurate knife-thrower</a>’. It makes predictions and is primarily motivated to give the user what it thinks the user wants. It is prone to hiding assumptions, making things up, and confidently asserting knowledge it does not possess. Replicating a model with an AI feels a bit like cross-examining an affable witness at a trial. The user has to be very specific and unambiguous in what they ask for, lest they get an enthusiastic but misleading answer.</p>
