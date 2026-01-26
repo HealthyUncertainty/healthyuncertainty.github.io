@@ -1,5 +1,5 @@
 ---
-title: Replicating Models with Claude AI part 2: a case study
+title: Replicating Models with Claude AI part 2 - a case study
 subtitle: Replicating a myasthenia gravis model from a public source
 tags: [r-tools, ai, replication]
 comments: true
