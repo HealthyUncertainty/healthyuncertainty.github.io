@@ -1,5 +1,5 @@
 ﻿---
-title: AI Skills: the Next Frontier in Open Models
+title: AI Skills are the Next Frontier in Open Models
 subtitle: Reflecting on 6 months of developing Skills in Claude
 tags: [R, tools, AI, Replication]
 ---
