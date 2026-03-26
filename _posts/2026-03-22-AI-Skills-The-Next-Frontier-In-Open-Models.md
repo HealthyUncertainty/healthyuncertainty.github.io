@@ -4,8 +4,6 @@ subtitle: Reflecting on 6 months of developing Skills in Claude
 tags: [R, tools, AI, Replication]
 ---
 
-# Introduction
-
 Statistics were, I am a bit embarrassed to say, my weakest subject in high school. I barely scraped by with a passing grade, well below my average in other math classes. Depending on how different in age we are, you may remember learning how to manually calculate an ANOVA table in math class. It was detailed, meticulous, and time-consuming work. So you can probably imagine my dread as I embarked on the journey of becoming a psychiatrist (my goal at the time) and learned about all the stats courses I would need to qualify for medical school.
 
 If so, you can perhaps also imagine my overwhelming relief when I got to the post-secondary level and was introduced to statistical software. You give it the data, it gives you the answer. You aren't reviewing the software's code line by line to verify how the C++ back-end sums squares, but the values it gives are reasonable and match what you'd find if you did it with pencil and paper. It just turns that from a several-minutes-long laborious process into something that takes less than a second.
