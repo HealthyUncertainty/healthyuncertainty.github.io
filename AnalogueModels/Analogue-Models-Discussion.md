@@ -7,7 +7,7 @@ tags: [R, tools, AI, Decision Models]
 | [Introduction](https://healthyuncertainty.github.io/2026-05-16-Analogue-Models-Intro/) | [Model 1 - CAIS](https://healthyuncertainty.github.io/AnalogueModels/Analogue-Models-1.-CAIS/) | [Model 2 - CNRD](https://healthyuncertainty.github.io/AnalogueModels/Analogue-Models-2.-CNRD/) | [Model 3 - ABD](https://healthyuncertainty.github.io/AnalogueModels/Analogue-Models-3.-ABD/) | [Model 4 - DMSS](https://healthyuncertainty.github.io/AnalogueModels/Analogue-Models-4.-DMSS/) | [Model 5 - CISS](https://healthyuncertainty.github.io/AnalogueModels/Analogue-Models-5.-CISS/) | [Discussion](https://healthyuncertainty.github.io/AnalogueModels/Analogue-Models-Discussion/) |
 
  
- # Experiment Summary
+# Experiment Summary
 
 I developed an AI Skill (a set of instructions and documentation for the AI to hold in its context window) that allows Claude to replicate published decision models for health economic analysis. The Skill was then used to build a series of five models exploring fictional treatments for hypothetical diseases that are analogous to real-world conditions. These models contained several features that would be expected to be common among models used for HTA decision making - adjustment for background mortality, discontinuation, induction and maintenance phases, large numbers of states, and more.
 
