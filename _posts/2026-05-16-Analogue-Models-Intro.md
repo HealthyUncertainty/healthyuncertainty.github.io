@@ -4,6 +4,9 @@ subtitle: Using a Claude Skill to generate five HTA-grade decision models
 tags: [R, tools, AI, Decision Models]
 ---
 
+_This is the first post in a seven-part series_
+
+| [Introduction](https://healthyuncertainty.github.io/2026-05-16-Analogue-Models-Intro/) | [Model 1 - CAIS](https://healthyuncertainty.github.io/AnalogueModels/Analogue-Models-1.-CAIS/) | [Model 2 - CNRD](https://healthyuncertainty.github.io/AnalogueModels/Analogue-Models-2.-CNRD/) | [Model 3 - ABD](https://healthyuncertainty.github.io/AnalogueModels/Analogue-Models-3.-ABD/) | [Model 4 - DMSS](https://healthyuncertainty.github.io/AnalogueModels/Analogue-Models-4.-DMSS/) | [Model 5 - CISS](https://healthyuncertainty.github.io/AnalogueModels/Analogue-Models-5.-CISS/) | [Discussion](https://healthyuncertainty.github.io/AnalogueModels/Analogue-Models-Discussion/) |
 
 # Introduction
 Early on in my experiments with Claude AI, I spent a lot of time exploring its capabilities at building decision models. I deeply understand the amount of time and effort it takes to build models that are fit for their purpose. Beyond the time it takes to perform extensive research to understand the pathways and parameters, the actual act of building a model requires considerable effort. If AI could actually build something coherent and reliable, the cost of model building would decrease considerably.
