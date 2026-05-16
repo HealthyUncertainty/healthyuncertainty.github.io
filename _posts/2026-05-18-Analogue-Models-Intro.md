@@ -4,7 +4,6 @@ subtitle: Using a Claude Skill to generate five HTA-grade decision models
 tags: [R, tools, AI, Decision Models]
 ---
 
-
 # Introduction
 Early on in my experiments with Claude AI, I spent a lot of time exploring its capabilities at building decision models. I deeply understand the amount of time and effort it takes to build models that are fit for their purpose. Beyond the time it takes to perform extensive research to understand the pathways and parameters, the actual act of building a model requires considerable effort. If AI could actually build something coherent and reliable, the cost of model building would decrease considerably.
 
