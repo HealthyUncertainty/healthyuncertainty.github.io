@@ -1,4 +1,4 @@
-﻿---
+---
 title: Disease Analogue Models with Generative AI
 subtitle: Using a Claude Skill to generate five HTA-grade decision models
 tags: [R, tools, AI, Decision Models]
