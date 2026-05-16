@@ -3,6 +3,9 @@ title: Disease Analogue Models - Discussion
 subtitle: Using a Claude Skill to generate five HTA-grade decision models
 tags: [R, tools, AI, Decision Models]
 ---
+
+| [Introduction](https://healthyuncertainty.github.io/2026-05-16-Analogue-Models-Intro/) | [Model 1 - CAIS](https://healthyuncertainty.github.io/AnalogueModels/Analogue-Models-1.-CAIS/) | [Model 2 - CNRD](https://healthyuncertainty.github.io/AnalogueModels/Analogue-Models-2.-CNRD/) | [Model 3 - ABD](https://healthyuncertainty.github.io/AnalogueModels/Analogue-Models-3.-ABD/) | [Model 4 - DMSS](https://healthyuncertainty.github.io/AnalogueModels/Analogue-Models-4.-DMSS/) | [Model 5 - CISS](https://healthyuncertainty.github.io/AnalogueModels/Analogue-Models-5.-CISS/) | [Discussion](https://healthyuncertainty.github.io/AnalogueModels/Analogue-Models-Discussion/) |
+
  
  # Experiment Summary
 
@@ -113,5 +116,7 @@ In this experiment I was able to generate five useful model prototypes quickly a
 This experiment offers the first public demonstration of the `HEmodelR` Skill. It also provides useful code for other modelers working in R who may be looking for examples of code to solve methodological problems in the models they're building. It is also my intention for these models to serve as the basis for future work that demonstrates the capabilities of AI Skills in health economics.
 
 I think this experiment also demonstrates an early proof of concept for the idea that public payers can reap substantial benefits - both financially and scientifically - if HTA agencies adopt an open source framework for reference models. Skills themselves are also well suited to open source sharing. Collaboration between jurisdictions would reduce costs, improve the quality and speed of decisions, and create real practical avenues for models to reflect the perspective of patients and the public.
+
+| [Introduction](https://healthyuncertainty.github.io/2026-05-16-Analogue-Models-Intro/) | [Model 1 - CAIS](https://healthyuncertainty.github.io/AnalogueModels/Analogue-Models-1.-CAIS/) | [Model 2 - CNRD](https://healthyuncertainty.github.io/AnalogueModels/Analogue-Models-2.-CNRD/) | [Model 3 - ABD](https://healthyuncertainty.github.io/AnalogueModels/Analogue-Models-3.-ABD/) | [Model 4 - DMSS](https://healthyuncertainty.github.io/AnalogueModels/Analogue-Models-4.-DMSS/) | [Model 5 - CISS](https://healthyuncertainty.github.io/AnalogueModels/Analogue-Models-5.-CISS/) | [Discussion](https://healthyuncertainty.github.io/AnalogueModels/Analogue-Models-Discussion/) |
 
 > Written with [StackEdit](https://stackedit.io/).
