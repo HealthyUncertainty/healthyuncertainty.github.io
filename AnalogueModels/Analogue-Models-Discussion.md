@@ -1,4 +1,10 @@
-﻿# Experiment Summary
+---
+title: Disease Analogue Models - Discussion
+subtitle: Using a Claude Skill to generate five HTA-grade decision models
+tags: [R, tools, AI, Decision Models]
+---
+ 
+ # Experiment Summary
 
 I developed an AI Skill (a set of instructions and documentation for the AI to hold in its context window) that allows Claude to replicate published decision models for health economic analysis. The Skill was then used to build a series of five models exploring fictional treatments for hypothetical diseases that are analogous to real-world conditions. These models contained several features that would be expected to be common among models used for HTA decision making - adjustment for background mortality, discontinuation, induction and maintenance phases, large numbers of states, and more.
 
