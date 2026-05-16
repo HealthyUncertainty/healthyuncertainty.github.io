@@ -1,13 +1,8 @@
 ---
-title: GRepackaging the WXYZ Model
-subtitle: An Illustration of the power of Claude Skills
-tags: [R, tools, AI, Replication]
----
-
- 
 title: Disease Analogue Models with Generative AI
 subtitle: Using a Claude Skill to generate five HTA-grade decision models
 tags: [R, tools, AI, Decision Models]
+---
 
 
 # Introduction
