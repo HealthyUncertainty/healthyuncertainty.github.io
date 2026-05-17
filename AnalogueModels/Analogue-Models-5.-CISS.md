@@ -218,7 +218,7 @@ The efficient frontier identifies Barisetinib as the most cost-effective targete
 
 Several limitations should be considered when interpreting these results. The model does not incorporate treatment switching or re-treatment after discontinuation, which may underestimate the real-world QALYs for strategies with high discontinuation rates. The time horizon of 5 years captures the initial treatment response and maintenance phases but does not model longer-term outcomes. Background mortality is simplified to a constant rate rather than age-dependent life table values, which is a reasonable approximation given the young starting age (38 years) and short horizon. Indirect costs, caregiver burden, and productivity effects are excluded consistent with the payer perspective. Finally, all parameter values used in this analysis are assumed for illustrative purposes and do not represent actual clinical trial data.
 
-# HuncMarkovPCOS
+# HuncMarkovCISS
 
 The `huncMarkovCISS` package is [available on Github](https://github.com/HealthyUncertainty/huncMarkovCISS). 
 
