@@ -148,7 +148,7 @@ Several limitations should be considered. The model uses 1-cycle tunnel states f
 
 The `huncMarkovABD` package is [available on Github](https://github.com/HealthyUncertainty/huncMarkovABD). 
 
-A modifiable Shiny app can be found here.
+A modifiable Shiny app c[can be found here](https://healthyuncertainty.shinyapps.io/huncMarkovABD/).
 
 ### _AI Use Disclaimer_
 _The near entirety of this post was written by Claude AI. The two small sections in which I speak in the first person are written by me._
