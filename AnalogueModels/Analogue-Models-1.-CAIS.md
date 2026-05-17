@@ -201,7 +201,7 @@ Several limitations should be considered when interpreting these results.
 
 The `huncMarkovCAIS` package is [available on Github](https://github.com/HealthyUncertainty/huncMarkovCAIS). 
 
-A modifiable Shiny app can be found here.
+A modifiable Shiny app [can be found here](https://healthyuncertainty.shinyapps.io/HuncMarkovCAIS/).
 
 ### _AI Use Disclaimer_
 _The near entirety of this post was written by Claude AI. The two small sections in which I speak in the first person are written by me._
