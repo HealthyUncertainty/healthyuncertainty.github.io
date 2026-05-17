@@ -173,7 +173,7 @@ Several limitations should be considered. The model uses a coupled 18-state stru
 
 The `huncMarkovCNRD` package is [available on Github](https://github.com/HealthyUncertainty/huncMarkovCNRD). 
 
-A modifiable Shiny app can be found here.
+A modifiable Shiny app [can be found here](https://healthyuncertainty.shinyapps.io/huncMarkovCNRD/).
 
 ### _AI Use Disclaimer_
 _The near entirety of this post was written by Claude AI. The two small sections in which I speak in the first person are written by me._
