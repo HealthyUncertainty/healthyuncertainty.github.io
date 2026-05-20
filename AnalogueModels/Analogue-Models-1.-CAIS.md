@@ -42,7 +42,7 @@ Infectaguard is a novel oral small-molecule agent targeting airway neutrophil el
 
 A cohort-level Markov state-transition model was developed to evaluate the cost-effectiveness of Infectaguard versus Usual Care for CAIS. The model adopts a Canadian public payer perspective with a lifetime (100-year) time horizon, using annual cycles (100 cycles total). The starting cohort age is 60 years (55% female). Both costs and QALYs are discounted at 3% per annum. Half-cycle correction is applied via standard weighting (0.5 weight on first and final cycle rows).
 
-This model uses a standard Markov state-transition architecture, with per-cycle transition probability matrices applied iteratively across the cohort. Age-dependent background mortality is embedded directly in the transition matrix at each cycle via interpolation of Canadian life table data, consistent with the approach described by Paulden (2025) for array-formula Excel implementations.
+This model uses a standard Markov state-transition architecture, with per-cycle transition probability matrices applied iteratively across the cohort. Age-dependent background mortality is embedded directly in the transition matrix at each cycle via interpolation of Canadian life table data.
 
 ### 2.2 Health States
 
