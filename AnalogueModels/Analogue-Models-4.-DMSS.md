@@ -31,7 +31,7 @@ After the model was calibrated and built, I asked Claude to generate a fictional
 
 Diffuse Mucosal Sclerosis Syndrome (DMSS) is a chronic cardiac condition characterised by progressive obstruction of the left ventricular outflow tract due to asymmetric septal hypertrophy. The condition is classified by symptom severity into three grades: Grade I (asymptomatic or mildly symptomatic), Grade II (moderate symptoms with exertional limitation), and Grade III (severe symptoms with significant functional impairment). Disease onset typically occurs in middle adulthood, and the condition follows a chronic course with symptom burden determined primarily by the degree of obstruction.
 
-At diagnosis, approximately 68% of patients present with Grade II symptoms and 32% with Grade III symptoms; Grade I classification at presentation is rare. The burden of moderate-to-severe PCOS is substantial, with utilities ranging from 0.68–0.93 depending on grade and treatment. Treatment aims to reduce the proportion of patients in higher-grade states and improve quality of life. Background mortality is not elevated relative to age-matched general population in the base case.
+At diagnosis, approximately 68% of patients present with Grade II symptoms and 32% with Grade III symptoms; Grade I classification at presentation is rare. The burden of moderate-to-severe DMSS is substantial, with utilities ranging from 0.68–0.93 depending on grade and treatment. Treatment aims to reduce the proportion of patients in higher-grade states and improve quality of life. Background mortality is not elevated relative to age-matched general population in the base case.
 
 ### 1.1 Current Treatment Landscape
 
@@ -43,7 +43,7 @@ Cardivex has demonstrated efficacy in shifting the symptom distribution toward G
 
 ### 2.1 Model Type and Time Horizon
 
-A cohort-level population proportion model was developed to evaluate the cost-effectiveness of five treatment strategies for PCOS. The model adopts a US payer perspective with an 80-year (lifetime) time horizon, using 4-week cycles (1,040 cycles total). Starting age is 55 years (48% female). Costs are discounted at 3% per annum. Half-cycle correction is not applied.
+A cohort-level population proportion model was developed to evaluate the cost-effectiveness of five treatment strategies for DMSS. The model adopts a US payer perspective with an 80-year (lifetime) time horizon, using 4-week cycles (1,040 cycles total). Starting age is 55 years (48% female). Costs are discounted at 3% per annum. Half-cycle correction is not applied.
 
 This model uses a population proportion structure rather than a standard Markov state-transition model. In each cycle, the surviving cohort is redistributed across severity grades using a fixed ("frozen") treatment-specific distribution, rather than transitioning between states according to per-state transition probabilities. Survival is determined solely by age-dependent background mortality (from sex-blended life tables) and, for surgical arms, one-time perioperative mortality at cycle 2.
 
@@ -142,7 +142,7 @@ PSA was conducted with 1,000 Monte Carlo iterations. PSA means converge within 0
 
 ## 5. Discussion
 
-This analysis demonstrates that surgical intervention — particularly Ablatherm — dominates all other strategies for PCOS, offering both the lowest cost and the highest QALYs. Cardivex, despite achieving a favourable grade distribution (48% Grade I vs 22% SoC), cannot overcome its premium pricing ($64,000/year) relative to the one-time cost of Ablatherm ($50,000) or Septoplasty ($110,000).
+This analysis demonstrates that surgical intervention — particularly Ablatherm — dominates all other strategies for DMSS, offering both the lowest cost and the highest QALYs. Cardivex, despite achieving a favourable grade distribution (48% Grade I vs 22% SoC), cannot overcome its premium pricing ($64,000/year) relative to the one-time cost of Ablatherm ($50,000) or Septoplasty ($110,000).
 
 The dominance of surgical options is driven by three factors. First, surgical arms achieve the highest Grade I proportion (72%), generating the highest QALYs despite slightly lower life years from perioperative risk. Second, surgical costs are front-loaded (one-time procedure) rather than recurring annually, producing substantial lifetime cost savings. Third, Ablatherm's lower procedural cost and lower perioperative mortality (0.9% vs 1.1%) give it a slight edge over Septoplasty.
 
